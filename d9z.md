@@ -28,7 +28,7 @@
 
 &emsp;&emsp;首先从最简单的一个案例开始，学习如何使用JUnit3和JUnit4进行单元测试。被测对象“加”类的代码如下：
 
- 
+
 ```
 public class AddOperation{
 
@@ -40,11 +40,11 @@ return x + y;
 
 }
 ```
- 
+
 
 &emsp;&emsp;接下来使用JUnit3对“加”类进行单元测试，测试前需要导入JUnit3软件包。具体代码如下（其中对部分代码进行了注释，方便大家阅读）：
 
- 
+
 ```
 import junit.framework.*;
 
@@ -78,7 +78,7 @@ assertEquals(expResult,result);
 
 }
 
-``` 
+```
 
 &emsp;&emsp;从上面的代码可以看出，使用JUnit3进行单元测试，单元测试类TestAddOperation必须继承自 TestCase，执行测试的方法必须以test开头，并且使用各种类型的断言判断实际结果和预期结果的差异。
 
@@ -90,8 +90,6 @@ assertEquals(expResult,result);
 <p align="center"><img src="./img/d9z/tu9.1.png" /></p>  
 <p align="center">图9.1  JUnit3测试“加”类显示结果一</p>  
 
-
-
 &emsp;&emsp;假设针对该“加”类有这样的测试用例，输入数据仍然为3和5，预期结果为15，再次编译、运行程序，单元测试运行结果如图9.2所示。
 
 
@@ -100,18 +98,16 @@ assertEquals(expResult,result);
 <p align="center">图9.2  JUnit3测试“加”类显示结果二</p>  
 
 
-
-
 &emsp;&emsp;从运行结果可以看出，JUnit3单元测试框架发现，针对AddOperation类的add()方法进行单元测试，实际运行结果3+5=8和预期结果15不一致，所以提示出现了一个失败，并且明确指出了失败的原因。
 
 
- 
+
 
 ### 9.1.2 “加”类JUnit4测试  
 
 &emsp;&emsp;同样对“加”类进行单元测试，不过这次是使用 JUnit4 进行单元测试，测试前需要先导入JUnit4软件包，具体代码如下：
 
- 
+
 ```
 import org.junit.*;
 
@@ -147,7 +143,7 @@ assertEquals(expResult,result);
 
 }
 ```
- 
+
 
 &emsp;&emsp;注意，使用JUnit4对AddOperation类中的add()方法进行单元测试，导入的是org.junit包里的内容，已经不再是junit.framework包，并且单元测试类TestAddOperation不需要再继承自TestCase类。
 
@@ -164,8 +160,6 @@ assertEquals(expResult,result);
 <p align="center">图9.3  JUnit4测试“加”类显示结果一</p>  
 
 
-
-
 &emsp;&emsp;同样的，把预期结果从8改成15，再次编译、运行，其运行结果如图9.4所示。从运行结果来看，和JUnit3相比，还是有一些不同的。
 
 
@@ -177,8 +171,6 @@ assertEquals(expResult,result);
 
 
 
-
- 
 
 ## 9.2  上机任务
 
@@ -207,7 +199,7 @@ assertEquals(expResult,result);
  
 
 
- 
+
 
 
  
@@ -234,7 +226,7 @@ assertEquals(expResult,result);
 
 &emsp;&emsp;具体代码如下：
 
- 
+
 ```
 public class Calculator{
 
@@ -304,11 +296,11 @@ return result;
 
 }
 ```
- 
+
 
 &emsp;&emsp;使用JUnit4对“计算器”类进行单元测试，具体代码如下（本段代码中没有添加任何注释，希望大家在没有注释的情况下，尝试理解代码的含义）：
 
- 
+
 ```
 import static org.junit.Assert.*;
 
@@ -402,7 +394,7 @@ assertEquals(100, result);
 
 }
 ```
- 
+
 
 &emsp;&emsp;下面对这个单元测试类中用到的技术类进行解释。
 
@@ -412,13 +404,13 @@ assertEquals(100, result);
 
 &emsp;&emsp;在JUnit4中，还引入了两个新的断言方法，它们专门用于数组对象的比较，其语法形式如下：
 
- 
+
 ```
 public static void assertEquals(String message,Object[] expected,Object[] actuals);
 
 public static void assertEquals(Object[] expected,Object[] actuals);
 ```
- 
+
 
 &emsp;&emsp;原先JUnit3中的assertEquals(long,long)方法在JUnit4中都使用assertEquals (Object,Object)方法，对于assertEquals(byte,byte)、assertEquals(int,int)等也是如此，这是因为从JDK1.5开始支持自动拆箱、装箱机制。
 
@@ -443,8 +435,6 @@ public static void assertEquals(Object[] expected,Object[] actuals);
 <p align="center">图9.5  JUnit4测试“计算器”类</p>  
 
 
-
-
 ### 9.3.2  JUnit4知识拓展  
 
 - 高级环境预设
@@ -455,7 +445,7 @@ public static void assertEquals(Object[] expected,Object[] actuals);
 
 &emsp;&emsp;在Calculator类中，编写的开方方法代码如下：
 
- 
+
 ```
 public void squareRoot(int n){
 
@@ -463,7 +453,7 @@ for(;;){}
 
 }
 ```
- 
+
 
 &emsp;&emsp;很显然，方法体内是一个死循环。如果使用JUnit对该方法执行单元测试，即需要在TestCalculator测试类中增加如下代码：
 
@@ -481,7 +471,7 @@ assertEquals(2, result);
 
 }
 
-``` 
+```
 
 &emsp;&emsp;再次编译、运行，其运行结果如图9.6所示。执行测试类，进入了死循环，不能正常退出。
 
@@ -489,8 +479,6 @@ assertEquals(2, result);
 
 <p align="center"><img src="./img/d9z/tu9.6.png" /></p>  
 <p align="center">图9.6  JUnit4测试死循环方法</p>  
-
-
 
 &emsp;&emsp;如何解决这个问题呢？尤其是对于那些逻辑很复杂，循环嵌套比较深的程序，很有可能出现死循环，因此一定要采取一些预防措施，JUnit4中的限时测试是一个很好的解决方案。如果给这些测试方法设定一个执行时间，并超过了这个时间，它们就会被系统强行终止，并且系统还会汇报该方法结束的原因是因为超时，这样就可以发现这些Bug了。要实现这一功能，只需要给@Test注解加一个参数即可，例如@Test(timeout = 1000)，timeout参数表示设定的时间，单位为毫秒。编译、运行程序，运行结果如图9.7所示，JUnit4会再报告一个失败，失败的原因是超过了这个时间未获得预期结果。
 
@@ -500,13 +488,11 @@ assertEquals(2, result);
 <p align="center">图9.7 JUnit4限时测试</p>  
 
 
-
-
 - 参数化测试
 
 &emsp;&emsp;在Calculator类中有一个求平方的方法square()，TestCalculator测试类还没有对它进行单元测试。假设现在为测试该方法设计3个测试用例，输入值分别是2、0、-3，预期结果分别是4、0、9，则需要在TestCalculator测试类中增加如下代码。
 
- 
+
 ```
 @Test
 
@@ -544,13 +530,13 @@ assertEquals(9, result);
 
 }
 ```
- 
+
 
 &emsp;&emsp;前面在介绍自动化测试时提到过，如果步骤相同，只是输入数据和预期结果不一样的多次、重复的测试，可以考虑采用录制、回放的模式。录制一次执行步骤，然后将多组测试用例的输入数据和预期结果放入自动测试工具中，回放时每次执行一组输入数据，并将实际运行结果和预期结果进行比较判断，这样可以提高测试效率。
 
 &emsp;&emsp;基于同样的思路，JUnit4提出了参数化测试的概念，只写一个测试方法，把若干种情况作为参数传递进去，一次性完成测试。其具体代码如下（代码中的注释非常重要，请认真阅读）：
 
- 
+
 ```
 import java.util.*;
 
@@ -582,7 +568,7 @@ private int result;
 
 @Parameters public static Collection data(){
 
-return Arrays.asList(new Object[][]{{2, 4},{0, 0},{-3, 9}});
+return Arrays.asList(new Object[][]{ {2, 4},{0, 0},{-3, 9} });
 
 }
 
@@ -608,7 +594,7 @@ assertEquals(result, calc.getResult());
 
 }
 ```
- 
+
 
 &emsp;&emsp;编译、运行程序，运行结果如图9.8所示。
 
@@ -616,8 +602,6 @@ assertEquals(result, calc.getResult());
 
 <p align="center"><img src="./img/d9z/tu9.8.png" /></p>  
 <p align="center">图9.8  JUnit4参数化测试</p>  
-
-
 
 
 &emsp;&emsp;关于JUnit4的测试运行机，这里做简要的补充说明。
@@ -630,7 +614,7 @@ assertEquals(result, calc.getResult());
 
 &emsp;&emsp;在JUnit4之前的版本中，已经有测试集的概念，可以在一个测试集中运行若干个测试类，不过必须要在类中添加一个 suite()方法。而在 JUnit4 中，可以使用注解替代。为了运行TestCalculator和TestSquare这个两测试类，需要使用@RunWith和@Suite注解编写一个空类，具体代码如下：
 
- 
+
 ```
 import org.junit.runner.RunWith;
 

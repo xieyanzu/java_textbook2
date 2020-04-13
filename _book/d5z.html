@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第五章    String字符串 · GitBook</title>
+        <title>第五章    反射机制 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -107,7 +107,7 @@
                 <a href="d1z.html">
             
                     
-                    第一章    初始java
+                    第一章    异常处理
             
                 </a>
             
@@ -120,7 +120,7 @@
                 <a href="d2z.html">
             
                     
-                    第二章    数据类型和运算符
+                    第二章    数据结构
             
                 </a>
             
@@ -133,7 +133,7 @@
                 <a href="d3z.html">
             
                     
-                    第三章    流程控制
+                    第三章    集合和泛型
             
                 </a>
             
@@ -146,7 +146,7 @@
                 <a href="d4z.html">
             
                     
-                    第四章    方法与数组
+                    第四章    IO和XML
             
                 </a>
             
@@ -159,7 +159,7 @@
                 <a href="d5z.html">
             
                     
-                    第五章    String字符串
+                    第五章    反射机制
             
                 </a>
             
@@ -172,7 +172,7 @@
                 <a href="d6z.html">
             
                     
-                    第六章    类和对象
+                    第六章    多线程
             
                 </a>
             
@@ -185,7 +185,7 @@
                 <a href="d7z.html">
             
                     
-                    第七章    包和访问控制
+                    第七章    网络编程
             
                 </a>
             
@@ -198,7 +198,7 @@
                 <a href="d8z.html">
             
                     
-                    第八章    继承和多态
+                    第八章    Java注解
             
                 </a>
             
@@ -211,7 +211,7 @@
                 <a href="d9z.html">
             
                     
-                    第九章    抽象类和接口
+                    第九章    软件测试与JUnit
             
                 </a>
             
@@ -224,7 +224,7 @@
                 <a href="d10z.html">
             
                     
-                    第十章    排序算法
+                    第十章    拓展阅读（选学）
             
                 </a>
             
@@ -262,7 +262,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >第五章    String字符串</a>
+        <a href="." >第五章    反射机制</a>
     </h1>
 </div>
 
@@ -378,8 +378,20 @@ e.printStackTrace();
 
 }
 </code></pre><p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x5206;&#x522B;&#x8F93;&#x5165;java.lang.Object&#x548C;com.bd.zuche.Car&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.1&#x548C;&#x56FE;5.2&#x6240;&#x793A;&#xFF0C;&#x56FE;&#x4E2D;&#x5217;&#x51FA;&#x4E86;Object&#x7C7B;&#x548C;Car&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>&#x56FE;5.1  Object&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;</p>
-<p>&#x56FE;5.2  Car&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;</p>
+<p align="center"><img src="img/d5z/tu5.1.png"></p>  
+<p align="center">&#x56FE;5.1  Object&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;</p>  
+
+
+
+
+
+
+<p align="center"><img src="img/d5z/tu5.2.png"></p>  
+<p align="center">&#x56FE;5.2  Car&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;</p>  
+
+
+
+
 <p>&#x2003;&#x2003;&#x8FD9;&#x662F;&#x4E2A;&#x5F88;&#x6709;&#x610F;&#x601D;&#x7684;&#x6848;&#x4F8B;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7C7B;&#x540D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7A0B;&#x5E8F;&#x80FD;&#x81EA;&#x52A8;&#x7ED9;&#x7528;&#x6237;&#x5217;&#x51FA;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x3002;&#x7528;&#x8FC7;Eclipse&#x8FD9;&#x79CD;&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x80FD;&#x4F1A;&#x89C9;&#x5F97;&#x4F3C;&#x66FE;&#x76F8;&#x8BC6;&#xFF0C;&#x6BD4;&#x5982;&#x7A0B;&#x5E8F;&#x5458;&#x4F7F;&#x7528;Eclipse&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x7C7B;Car&#xFF0C;&#x91CC;&#x9762;&#x5199;&#x4E86;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x518D;&#x521B;&#x5EFA;Car&#x7C7B;&#x5BF9;&#x8C61;car&#x5E76;&#x8F93;&#x5165;car.&#x65F6;&#xFF0C;Eclipse&#x4F1A;&#x5F39;&#x51FA;car&#x5BF9;&#x8C61;&#x53EF;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x7ED9;&#x7A0B;&#x5E8F;&#x5458;&#x9009;&#x62E9;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x4F5C;&#x4E3A;&#x7A0B;&#x5E8F;&#x5458;&#xFF0C;&#x7F16;&#x5199;&#x7B80;&#x5355;&#x7684;Java&#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x673A;&#x4F1A;&#x4E0D;&#x591A;&#x3002;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x4E00;&#x822C;&#x5728;&#x6846;&#x67B6;&#x4E2D;&#x4F7F;&#x7528;&#x8F83;&#x591A;&#xFF0C;&#x56E0;&#x4E3A;&#x6846;&#x67B6;&#x8981;&#x9002;&#x7528;&#x66F4;&#x591A;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5BF9;&#x7075;&#x6D3B;&#x6027;&#x8981;&#x6C42;&#x8F83;&#x9AD8;&#xFF0C;&#x800C;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x6B63;&#x597D;&#x80FD;&#x89E3;&#x51B3;&#x8FD9;&#x79CD;&#x7075;&#x6D3B;&#x6027;&#x8981;&#x6C42;&#x3002;</p>
 <h2 id="52--class&#x7C7B;">5.2  Class&#x7C7B;</h2>
@@ -465,7 +477,15 @@ System.out.println(&quot;name.getClass().getSuperclass() &#x7C7B;&#x540D;&#x79F0
 }
 
 }
-</code></pre><p>&#x56FE;5.3  &#x83B7;&#x53D6;Class&#x7C7B;&#x5BF9;&#x8C61;</p>
+</code></pre><p align="center"><img src="img/d5z/tu5.3.png"></p>  
+<p align="center">&#x56FE;5.3  &#x83B7;&#x53D6;Class&#x7C7B;&#x5BF9;&#x8C61;</p>  
+
+
+
+
+
+
+
 <h3 id="522--class&#x7C7B;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">5.2.2  Class&#x7C7B;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
 <p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x5217;&#x4E3E;&#x4E86;Class&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x672C;&#x7AE0;&#x7684;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x88AB;&#x9891;&#x7E41;&#x5730;&#x4F7F;&#x7528;&#x3002;</p>
 <ul>
@@ -576,7 +596,12 @@ e.printStackTrace();
 }
 </code></pre><p>&#x2003;&#x2003;&#x4E3A;&#x4E86;&#x4F7F;&#x7A0B;&#x5E8F;&#x8F93;&#x51FA;&#x7684;&#x5185;&#x5BB9;&#x4E0D;&#x8981;&#x592A;&#x591A;&#xFF0C;&#x6240;&#x4EE5;&#x9009;&#x62E9;&#x4E86;&#x4EC5;&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;org.w3c.dom.NodeList&#x63A5;&#x53E3;&#xFF0C;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;&#x4FE1;&#x606F;&#x3002;&#x6848;&#x4F8B;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;Method&#x7C7B;&#x7684;getName()&#x3001;getDeclaringClass()&#x3001;getParameterTypes()&#x3001;getExceptionTypes()&#x3001;getReturnType()&#x65B9;&#x6CD5;&#xFF0C;&#x4F5C;&#x7528;&#x5206;&#x522B;&#x4E3A;&#x83B7;&#x5F97;&#x65B9;&#x6CD5;&#x540D;&#x79F0;&#x3001;&#x65B9;&#x6CD5;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x540D;&#xFF0C;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x65B9;&#x6CD5;&#x7684;&#x5F02;&#x5E38;&#x5217;&#x8868;&#x4EE5;&#x53CA;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.4&#x6240;&#x793A;&#xFF0C;&#x56E0;&#x4E3A;NodeList&#x63A5;&#x53E3;&#x7684;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x6CA1;&#x6709;&#x5FC5;&#x987B;&#x8981;&#x6355;&#x83B7;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x6240;&#x4EE5;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x4E2D;&#x6CA1;&#x6709;&#x663E;&#x793A;&#x51FA;&#x5F02;&#x5E38;&#x5217;&#x8868;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
-<p>&#x56FE;5.4  &#x83B7;&#x53D6;&#x7C7B;&#x65B9;&#x6CD5;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</p>
+<p align="center"><img src="img/d5z/tu5.4.png"></p>  
+<p align="center">&#x56FE;5.4  &#x83B7;&#x53D6;&#x7C7B;&#x65B9;&#x6CD5;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</p>  
+
+
+
+
 <p>&#x2003;&#x2003;&#x63A5;&#x4E0B;&#x6765;&#x5728;&#x4E0A;&#x9762;&#x6848;&#x4F8B;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x8BF4;&#x660E;Class&#x7C7B;&#x7684;getDeclaredMethods()&#x65B9;&#x6CD5;&#x548C;getMethods()&#x65B9;&#x6CD5;&#x7684;&#x533A;&#x522B;&#x3002;&#x5148;&#x521B;&#x5EFA;Sub&#x548C;Super&#x4E24;&#x4E2A;&#x7C7B;&#xFF0C;&#x5176;&#x4E2D;Sub&#x662F;&#x7EE7;&#x627F;&#x81EA;Super&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x6BCF;&#x4E2A;&#x7C7B;&#x4E2D;&#x90FD;&#x6709;&#x56DB;&#x79CD;&#x4E0D;&#x540C;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code>public class Sub extends Super
 
@@ -622,9 +647,19 @@ public String supPublic(){return supPub;}
 
 }
 </code></pre><p>&#x2003;&#x2003;&#x4FEE;&#x6539;TestMethod&#x7C7B;&#x4EE3;&#x7801;&#xFF0C;&#x5C06;&#x88C5;&#x5165;&#x7C7B;&#x4ECE;org.w3c.dom.NodeList&#x6539;&#x4E3A;Sub&#xFF0C;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x89C2;&#x5BDF;Sub&#x7C7B;&#x7684;Class&#x5BF9;&#x8C61;&#x8C03;&#x7528;getDeclaredMethods()&#x65B9;&#x6CD5;&#xFF0C;&#x83B7;&#x5F97;&#x4E86;Sub&#x7C7B;&#x7684;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.5&#x6240;&#x793A;&#x3002;</p>
-<p>&#x56FE;5.5  getDeclaredMethods()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x65B9;&#x6CD5;</p>
+<p align="center"><img src="img/d5z/tu5.5.png"></p>  
+<p align="center">&#x56FE;5.5  getDeclaredMethods()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x65B9;&#x6CD5;</p>  
+
+
+
+
 <p>&#x2003;&#x2003;&#x4ECE;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;Class&#x7C7B;&#x7684;getDeclaredMethods()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x4E86;Class&#x6240;&#x8868;&#x793A;&#x7684;Sub&#x7C7B;&#x7684;&#x5168;&#x90E8;&#x79C1;&#x6709;&#x3001;&#x9ED8;&#x8BA4;&#x3001;&#x53D7;&#x4FDD;&#x62A4;&#x548C;&#x516C;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x4E0D;&#x5305;&#x62EC;&#x7EE7;&#x627F;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x5982;&#x679C;Super&#x7C7B;&#x548C;Sub&#x7C7B;&#x5728;&#x540C;&#x4E00;&#x4E2A;Java&#x6E90;&#x6587;&#x4EF6;&#x4E2D;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF0C;&#x663E;&#x793A;&#x7684;&#x7ED3;&#x679C;&#x4F1A;&#x5305;&#x62EC;&#x7236;&#x7C7B;&#x516C;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#xFF09;&#x3002;&#x82E5;&#x5C06;TestMethod&#x4EE3;&#x7801;&#x4E2D;&#x7684;getDeclaredMethods()&#x65B9;&#x6CD5;&#x518D;&#x6539;&#x4E3A;getMethods()&#xFF0C;&#x5219;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.6&#x6240;&#x793A;&#x3002;</p>
-<p>&#x56FE;5.6  getMethods()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x65B9;&#x6CD5;</p>
+<p align="center"><img src="img/d5z/tu5.6.png"></p>  
+<p align="center">&#x56FE;5.6  getMethods()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x65B9;&#x6CD5;</p>  
+
+
+
+
 <p>&#x2003;&#x2003;&#x4ECE;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF08;&#x8F93;&#x51FA;&#x5185;&#x5BB9;&#x8F83;&#x591A;&#xFF0C;&#x4EC5;&#x622A;&#x9009;&#x4E86;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#xFF09;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;Class&#x7C7B;&#x7684;getMethods()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x4E86;Class&#x6240;&#x8868;&#x793A;&#x7684;Sub&#x7C7B;&#x53CA;&#x5176;&#x7236;&#x7C7B;&#x6240;&#x6709;&#x7684;&#x516C;&#x5171;&#x65B9;&#x6CD5;&#x3002;</p>
 <h3 id="542--&#x83B7;&#x53D6;&#x5C5E;&#x6027;">5.4.2  &#x83B7;&#x53D6;&#x5C5E;&#x6027;</h3>
 <p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x4E0A;&#x4E00;&#x5C0F;&#x8282;&#x7684;&#x5B66;&#x4E60;&#xFF0C;&#x5DF2;&#x7ECF;&#x83B7;&#x5F97;Class&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x64CD;&#x4F5C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x6570;&#x7EC4;&#x91CC;&#x7684;Method&#x5BF9;&#x8C61;&#xFF0C;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x3002;&#x4E00;&#x4E2A;&#x7C7B;&#x9664;&#x4E86;&#x6709;&#x65B9;&#x6CD5;&#x5916;&#xFF0C;&#x5269;&#x4E0B;&#x6700;&#x91CD;&#x8981;&#x7684;&#x90E8;&#x5206;&#x5E94;&#x8BE5;&#x5C31;&#x662F;&#x5C5E;&#x6027;&#x4E86;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6848;&#x4F8B;&#x6765;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x83B7;&#x53D6;Sub&#x7C7B;&#x7684;&#x76F8;&#x5173;&#x5C5E;&#x6027;&#x3002;</p>
@@ -698,8 +733,20 @@ e.printStackTrace();
 }
 </code></pre><p>&#x2003;&#x2003;&#x6848;&#x4F8B;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;Field&#x7C7B;&#x7684;getType()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x7684;&#x7C7B;&#x578B;&#xFF0C;getName()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x540D;&#x3001;getDeclaringClass()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x540D;&#x79F0;&#xFF0C;getModifiers()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x4EE5;&#x6574;&#x6570;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x7531;&#x6B64;Field&#x5BF9;&#x8C61;&#x8868;&#x793A;&#x7684;&#x5C5E;&#x6027;&#x7684;Java&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x4FEE;&#x9970;&#x7B26;&#xFF08;&#x503C;&#x4E3A;m&#xFF09;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;Modifier.toString(m)&#x83B7;&#x53D6;Java&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x4FEE;&#x9970;&#x7B26;&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x679C;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.7&#x6240;&#x793A;&#x3002;&#x6CE8;&#x610F;&#x7A0B;&#x5E8F;&#x4E2D;&#x9996;&#x5148;&#x4F7F;&#x7528;&#x4E86;getDeclaredField(name)&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x4E86;&#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x540D;&#x7684;&#x5C5E;&#x6027;&#x5BF9;&#x8C61;&#x3002;&#x83B7;&#x53D6;Sub&#x7C7B;&#x5C5E;&#x6027;&#x7684;&#x65B9;&#x6CD5;&#x662F;getDeclaredFields()&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;Sub&#x7C7B;&#x7684;&#x5168;&#x90E8;&#x5C5E;&#x6027;&#xFF08;&#x4E0D;&#x542B;&#x7EE7;&#x627F;&#x7684;&#x5C5E;&#x6027;&#xFF09;&#x3002;&#x5982;&#x679C;&#x60F3;&#x83B7;&#x5F97;Sub&#x7C7B;&#x6240;&#x6709;&#x516C;&#x5171;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x8C03;&#x7528;getFields()&#x65B9;&#x6CD5;&#x3002;&#x5C06;&#x7A0B;&#x5E8F;&#x4E2D;getDeclaredFields()&#x65B9;&#x6CD5;&#x6539;&#x4E3A;getFields()&#xFF0C;&#x518D;&#x6B21;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x3002;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.8&#x6240;&#x793A;&#x3002;</p>
-<p>&#x56FE;5.7  getDeclaredFields()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x5C5E;&#x6027;</p>
-<p>&#x56FE;5.8  getFields()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x5C5E;&#x6027;</p>
+<p align="center"><img src="img/d5z/tu5.7.png"></p>  
+<p align="center">&#x56FE;5.7  getDeclaredFields()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x5C5E;&#x6027;</p>  
+
+
+
+
+
+
+<p align="center"><img src="img/d5z/tu5.8.png"></p>  
+<p align="center">&#x56FE;5.8  getFields()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x5C5E;&#x6027;</p>  
+
+
+
+
 <h3 id="543--&#x83B7;&#x53D6;&#x6784;&#x9020;&#x65B9;&#x6CD5;">5.4.3  &#x83B7;&#x53D6;&#x6784;&#x9020;&#x65B9;&#x6CD5;</h3>
 <p>&#x2003;&#x2003;&#x901A;&#x8FC7;Class&#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;getDeclaredMethods()&#x548C;getMethods()&#x7B49;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;&#x7684;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x83B7;&#x5F97;&#x666E;&#x901A;&#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x80FD;&#x83B7;&#x5F97;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x901A;&#x8FC7;Class&#x7C7B;&#x7684;getConstructors()&#x65B9;&#x6CD5;&#x548C; getDeclaredConstructors()&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;Constructor&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x3002;&#x4E0B;&#x9762;&#x9996;&#x5148;&#x6539;&#x9020;Sub&#x7C7B;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code>public class Sub extends Super
@@ -836,7 +883,20 @@ e.printStackTrace();
 
 }
 </code></pre><p>&#x2003;&#x2003;&#x5206;&#x522B;&#x8C03;&#x7528;Sub&#x7C7B;&#x6240;&#x5C5E;Class&#x7684;getDeclaredConstructors()&#x548C;getConstructors()&#x65B9;&#x6CD5;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.9&#x548C;&#x56FE;5.10&#x6240;&#x793A;&#x3002;&#x5176;&#x4E2D;getDeclaredConstructors()&#x65B9;&#x6CD5;&#x5F97;&#x5230;&#x4E86;Sub&#x7C7B;&#x91CC;&#x58F0;&#x660E;&#x7684;&#x5168;&#x90E8;&#x4E94;&#x4E2A;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;getConstructors()&#x65B9;&#x6CD5;&#x5F97;&#x5230;&#x4E86;Sub&#x7C7B;&#x91CC;&#x58F0;&#x660E;&#x7684;&#x4E24;&#x4E2A;&#x516C;&#x6709;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>&#x56FE;5.9  getDeclaredConstructors()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;            &#x56FE;5.10  getConstructors()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;</p>
+<p align="center"><img src="img/d5z/tu5.9.png"></p>  
+<p align="center">&#x56FE;5.9  getDeclaredConstructors()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;    </p>  
+
+
+
+<p align="center"><img src="img/d5z/tu5.10.png"></p>  
+<p align="center">&#x56FE;5.10  getConstructors()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;</p>  
+
+
+
+
+
+
+
 <h2 id="55--&#x4E0A;&#x673A;&#x4EFB;&#x52A1;">5.5  &#x4E0A;&#x673A;&#x4EFB;&#x52A1;</h2>
 <h4 id="&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;54&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;">&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;5.4&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;</h4>
 <p>&#x65F6;&#x95F4;&#xFF1A;30&#x5206;&#x949F;&#x3002;</p>
@@ -929,7 +989,12 @@ e.printStackTrace();
 <p>&#x2003;&#x2003;&#x901A;&#x8FC7;Class&#x7C7B;&#x7684;newInstance()&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x8981;&#x6C42;&#x8BE5;Class&#x5BF9;&#x5E94;&#x7C7B;&#x6709;&#x65E0;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x3002;&#x6267;&#x884C;newInstance()&#x65B9;&#x6CD5;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x65E0;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x8BE5;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5176;&#x4EE3;&#x7801;&#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;</p>
 <pre><code>Super sup = new Super();
 </code></pre><p>&#x2003;&#x2003;&#x5982;&#x679C;Super&#x7C7B;&#x6CA1;&#x6709;&#x65E0;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x65F6;&#x5219;&#x4F1A;&#x51FA;&#x73B0;&#x5982;&#x56FE;5.11&#x6240;&#x793A;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x629B;&#x51FA;&#x4E00;&#x4E2A;InstantiationException&#x5B9E;&#x4F8B;&#x5316;&#x5F02;&#x5E38;&#x3002;</p>
-<p>&#x56FE;5.11  newInstance()&#x65B9;&#x6CD5;&#x4EA7;&#x751F;&#x5B9E;&#x4F8B;&#x5316;&#x5F02;&#x5E38;</p>
+<p align="center"><img src="img/d5z/tu5.11.png"></p>  
+<p align="center">&#x56FE;5.11  newInstance()&#x65B9;&#x6CD5;&#x4EA7;&#x751F;&#x5B9E;&#x4F8B;&#x5316;&#x5F02;&#x5E38;</p>  
+
+
+
+
 <ul>
 <li>&#x8FC7;Constructor&#x7684;newInstance(Object[] args)&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</li>
 </ul>
@@ -1021,7 +1086,12 @@ e.printStackTrace();
 
 }
 </code></pre><p>&#x2003;&#x2003;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x9996;&#x5148;&#x901A;&#x8FC7;Class&#x5BF9;&#x8C61;&#x7684;getDeclaredField(&quot;supPri&quot;)&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x4E86;Field&#x5BF9;&#x8C61;f&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;f.setAccessible(true)&#x65B9;&#x6CD5;&#x53D6;&#x6D88;&#x4E86;supPri&#x5C5E;&#x6027;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x6743;&#x9650;&#xFF08;&#x53EA;&#x662F;&#x53D6;&#x6D88;Field&#x5BF9;&#x8C61;f&#x5BF9;&#x5E94;&#x5C5E;&#x6027;supPri&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x6743;&#x9650;&#xFF0C;&#x5728;Field&#x5BF9;&#x8C61;&#x5185;&#x90E8;&#x8D77;&#x4F5C;&#x7528;&#xFF0C;&#x4ECD;&#x4E0D;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;sup.supPri&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF09;&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x901A;&#x8FC7;set(Object o,Object v)&#x3001;get(Object o)&#xFF0C;&#x4FEE;&#x6539;&#x3001;&#x83B7;&#x53D6;&#x8BE5;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x3002;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.12&#x6240;&#x793A;&#x3002;</p>
-<p>&#x56FE;5.12  &#x901A;&#x8FC7;Field&#x5BF9;&#x8C61;&#x4FEE;&#x6539;&#x79C1;&#x6709;&#x5C5E;&#x6027;</p>
+<p align="center"><img src="img/d5z/tu5.12.png"></p>  
+<p align="center">&#x56FE;5.12  &#x901A;&#x8FC7;Field&#x5BF9;&#x8C61;&#x4FEE;&#x6539;&#x79C1;&#x6709;&#x5C5E;&#x6027;</p>  
+
+
+
+
 <h3 id="563--&#x8C03;&#x7528;&#x65B9;&#x6CD5;">5.6.3  &#x8C03;&#x7528;&#x65B9;&#x6CD5;</h3>
 <p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x673A;&#x5236;&#xFF0C;&#x8FD0;&#x884C;&#x65F6;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x5C5E;&#x6027;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x6743;&#x9650;&#x53CA;&#x5C5E;&#x6027;&#x503C;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x5C06;&#x4ECB;&#x7ECD;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;Method&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x52A8;&#x6001;&#x6267;&#x884C;Class&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x524D;&#x9762;&#x4ECB;&#x7ECD;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x5047;&#x8BBE;&#x73B0;&#x5728;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x6839;&#x636E;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#x79F0;&#x3001;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x3001;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
@@ -1088,7 +1158,12 @@ e.printStackTrace();
 
 }
 </code></pre><p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x5F97;&#x65B9;&#x6CD5;&#x540D;multiply&#x4EE5;&#x53CA;&#x5B9E;&#x53C2;&#x5217;&#x8868;3&#x548C;4&#xFF0C;&#x901A;&#x8FC7;getDeclaredMethod (&quot;multiply&quot;,new Class[]{int.class, int.class})&#x65B9;&#x6CD5;&#x83B7;&#x5F97;Method&#x5BF9;&#x8C61;m&#xFF0C;&#x518D;&#x901A;&#x8FC7;m.invoke(obj, newObject[]{3,4})&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x5BF9;&#x8C61;obj&#xFF08;&#x53EF;&#x80FD;&#x4E5F;&#x662F;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x7684;&#xFF09;&#x5BF9;&#x5E94;&#x65B9;&#x6CD5;public int multiply(int x, int y)&#x53D6;&#x5F97;&#x9700;&#x8981;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x7A0B;&#x5E8F;&#x5982;&#x679C;&#x83B7;&#x5F97;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#x4E3A;add&#xFF0C;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E3A;18&#xFF0C;&#x5219;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x52A8;&#x6001;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x4F1A;&#x6267;&#x884C;&#x5BF9;&#x8C61;&#x7684;public int add(int x)&#x65B9;&#x6CD5;&#x3002;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.13&#x6240;&#x793A;&#x3002;</p>
-<p>&#x56FE;5.13  &#x901A;&#x8FC7;Method&#x5BF9;&#x8C61;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x65B9;&#x6CD5;</p>
+<p align="center"><img src="img/d5z/tu5.13.png"></p>  
+<p align="center">&#x56FE;5.13  &#x901A;&#x8FC7;Method&#x5BF9;&#x8C61;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x65B9;&#x6CD5;</p>  
+
+
+
+
 <p>&#x2003;&#x2003;&#x81F3;&#x6B64;&#xFF0C;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x6838;&#x5FC3;&#x5185;&#x5BB9;&#x5DF2;&#x4ECB;&#x7ECD;&#x5B8C;&#x6BD5;&#x3002;&#x5176;&#x4E2D;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#xFF0C;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x662F;Java&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x7CBE;&#x9AD3;&#xFF0C;&#x5B66;&#x4E60;&#x5B83;&#x5BF9;&#x540E;&#x671F;&#x6846;&#x67B6;&#x8BFE;&#x7A0B;&#x7684;&#x6DF1;&#x5165;&#x7406;&#x89E3;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#x3002;</p>
 <h2 id="57--&#x4E0A;&#x673A;&#x4EFB;&#x52A1;">5.7  &#x4E0A;&#x673A;&#x4EFB;&#x52A1;</h2>
 <h4 id="&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;56&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;">&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;5.6&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;</h4>
@@ -1164,7 +1239,12 @@ e.printStackTrace();
 
 }
 </code></pre><p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.14&#x6240;&#x793A;&#x3002;</p>
-<p>&#x56FE;5.14  &#x4F7F;&#x7528;Array&#x7C7B;&#x521B;&#x5EFA;&#x52A8;&#x6001;&#x6570;&#x7EC4;</p>
+<p align="center"><img src="img/d5z/tu5.14.png"></p>  
+<p align="center">&#x56FE;5.14  &#x4F7F;&#x7528;Array&#x7C7B;&#x521B;&#x5EFA;&#x52A8;&#x6001;&#x6570;&#x7EC4;</p>  
+
+
+
+
 <h3 id="582--&#x64CD;&#x4F5C;&#x591A;&#x7EF4;&#x52A8;&#x6001;&#x6570;&#x7EC4;">5.8.2  &#x64CD;&#x4F5C;&#x591A;&#x7EF4;&#x52A8;&#x6001;&#x6570;&#x7EC4;</h3>
 <p>&#x2003;&#x2003;&#x4F7F;&#x7528;Array&#x7C7B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x591A;&#x7EF4;&#x52A8;&#x6001;&#x6570;&#x7EC4;&#x7684;&#x65B9;&#x6CD5;&#x4E3A;newInstance(Class componentType, int... dimensions)&#xFF0C;&#x5176;&#x4E2D;dimensions&#x53C2;&#x6570;&#x662F;&#x8868;&#x793A;&#x65B0;&#x5EFA;&#x6570;&#x7EC4;&#x7EF4;&#x5EA6;&#x7684;int&#x6570;&#x7EC4;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x60F3;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E09;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x7EF4;&#x5EA6;&#x5206;&#x522B;&#x4E3A;8&#x3001;10&#x3001;12&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A;3&#x7684;&#x6574;&#x578B;&#x6570;&#x7EC4;&#xFF08;int[] d = {8,10,12}&#xFF09;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6574;&#x578B;&#x6570;&#x7EC4;&#x521B;&#x5EFA;&#x4E09;&#x7EF4;&#x6570;&#x7EC4;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;8&#xD7;10&#x4E8C;&#x7EF4;&#x6574;&#x578B;&#x52A8;&#x6001;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x7ED9;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x4E3A;[4][6]&#x7684;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x8D4B;&#x503C;&#x4E3A;20&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -1248,12 +1328,12 @@ e.printStackTrace();
 
             
                 
-                <a href="d4z.html" class="navigation navigation-prev " aria-label="Previous page: 第四章    方法与数组">
+                <a href="d4z.html" class="navigation navigation-prev " aria-label="Previous page: 第四章    IO和XML">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="d6z.html" class="navigation navigation-next " aria-label="Next page: 第六章    类和对象">
+                <a href="d6z.html" class="navigation navigation-next " aria-label="Next page: 第六章    多线程">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1264,7 +1344,7 @@ e.printStackTrace();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第五章    String字符串","level":"1.6","depth":1,"next":{"title":"第六章    类和对象","level":"1.7","depth":1,"path":"d6z.md","ref":"d6z.md","articles":[]},"previous":{"title":"第四章    方法与数组","level":"1.5","depth":1,"path":"d4z.md","ref":"d4z.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"d5z.md","mtime":"2020-04-12T14:38:16.960Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-12T14:37:51.739Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第五章    反射机制","level":"1.6","depth":1,"next":{"title":"第六章    多线程","level":"1.7","depth":1,"path":"d6z.md","ref":"d6z.md","articles":[]},"previous":{"title":"第四章    IO和XML","level":"1.5","depth":1,"path":"d4z.md","ref":"d4z.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"d5z.md","mtime":"2020-04-13T15:15:33.155Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T15:34:54.839Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
