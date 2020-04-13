@@ -1,0 +1,1307 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第五章    String字符串 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="d6z.html" />
+    
+    
+    <link rel="prev" href="d4z.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="d1z.html">
+            
+                <a href="d1z.html">
+            
+                    
+                    第一章    初始java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="d2z.html">
+            
+                <a href="d2z.html">
+            
+                    
+                    第二章    数据类型和运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="d3z.html">
+            
+                <a href="d3z.html">
+            
+                    
+                    第三章    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="d4z.html">
+            
+                <a href="d4z.html">
+            
+                    
+                    第四章    方法与数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="d5z.html">
+            
+                <a href="d5z.html">
+            
+                    
+                    第五章    String字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="d6z.html">
+            
+                <a href="d6z.html">
+            
+                    
+                    第六章    类和对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="d7z.html">
+            
+                <a href="d7z.html">
+            
+                    
+                    第七章    包和访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="d8z.html">
+            
+                <a href="d8z.html">
+            
+                    
+                    第八章    继承和多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="d9z.html">
+            
+                <a href="d9z.html">
+            
+                    
+                    第九章    抽象类和接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="d10z.html">
+            
+                <a href="d10z.html">
+            
+                    
+                    第十章    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第五章    String字符串</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x672C;&#x7AE0;&#x7B80;&#x4ECB;">&#x672C;&#x7AE0;&#x7B80;&#x4ECB;</h2>
+<p>&#x2003;&#x2003;&#x672C;&#x7AE0;&#x5C06;&#x4F1A;&#x9996;&#x5148;&#x4ECB;&#x7ECD;&#x4EC0;&#x4E48;&#x662F;Java&#x53CD;&#x5C04;&#x673A;&#x5236;&#xFF0C;&#x4E4B;&#x540E;&#x4F1A;&#x901A;&#x8FC7;Java&#x53CD;&#x5C04;&#x673A;&#x5236;&#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x52A8;&#x6001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x3001;&#x6539;&#x53D8;&#x5C5E;&#x6027;&#x503C;&#x548C;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x6700;&#x540E;&#x4F1A;&#x4ECB;&#x7ECD;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x5E76;&#x5B58;&#x53D6;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x3002;</p>
+<h2 id="51--java&#x53CD;&#x5C04;&#x673A;&#x5236;">5.1  Java&#x53CD;&#x5C04;&#x673A;&#x5236;</h2>
+<p>&#x2003;&#x2003;Java&#x53CD;&#x5C04;&#xFF08;Reflection&#xFF09;&#x5C31;&#x662F;Java&#x7A0B;&#x5E8F;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x52A0;&#x8F7D;&#x3001;&#x63A2;&#x77E5;&#x3001;&#x4F7F;&#x7528;&#x7F16;&#x8BD1;&#x671F;&#x95F4;&#x5B8C;&#x5168;&#x672A;&#x77E5;&#x7684;&#x7C7B;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;Java&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x52A0;&#x8F7D;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;&#x65F6;&#x624D;&#x5F97;&#x77E5;&#x7C7B;&#x540D;&#x7684;&#x7C7B;&#xFF0C;&#x83B7;&#x5F97;&#x7C7B;&#x7684;&#x5B8C;&#x6574;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x5B9E;&#x4F8B;&#x5316;&#x51FA;&#x5BF9;&#x8C61;&#xFF0C;&#x7ED9;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x8BBE;&#x5B9A;&#x503C;&#x6216;&#x8005;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x79CD;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x52A8;&#x6001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x4FE1;&#x606F;&#x4EE5;&#x53CA;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x529F;&#x80FD;&#x79F0;&#x4E3A;Java&#x7684;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x3002;</p>
+<h3 id="511--&#x53CD;&#x5C04;&#x5F15;&#x5165;">5.1.1  &#x53CD;&#x5C04;&#x5F15;&#x5165;</h3>
+<p>&#x2003;&#x2003;&#x5728;&#x201C;&#x79DF;&#x8F66;&#x7CFB;&#x7EDF;&#x201D;&#x4E2D;&#xFF0C;&#x7F16;&#x5199;&#x8FC7;&#x4E00;&#x4E2A;&#x9A7E;&#x9A76;&#x5458;&#xFF08;&#x79DF;&#x8F66;&#x8005;&#xFF09;Driver&#x7C7B;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x6709;&#x4E00;&#x4E2A;callShow(Vehicle v)&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x4E3A;Vehicle&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x663E;&#x793A;&#x6307;&#x5B9A;&#x8F66;&#x8F86;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x6539;&#x9020;&#x4E00;&#x4E0B;&#x4E4B;&#x524D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C06;Driver&#x7C7B;&#x4F5C;&#x4E3A;&#x7A0B;&#x5E8F;&#x5165;&#x53E3;&#x7C7B;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>import com.bd.zuche.*;
+
+public class Driver 
+
+{       
+
+    String name = &quot;&#x9A7E;&#x9A76;&#x5458;&quot;;
+
+    public Driver(String name)
+
+    {
+
+        this.name = name;
+
+    }
+
+    public static void main(String[] args) 
+
+    {
+
+        Car car = new Car(&quot;&#x6218;&#x795E;&quot;,&quot;&#x957F;&#x57CE;&quot;);
+
+        Driver d1 = new Driver(&quot;&#x67F3;&#x6D77;&#x9F99;&quot;);
+
+        d1.callShow(car);
+
+    }
+
+    //&#x7F16;&#x8BD1;&#x65F6;&#x77E5;&#x9053;&#x9700;&#x8981;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x662F;Vehicle&#x7C7B;&#x578B;
+
+    public void callShow(Vehicle v)
+
+    {
+
+        v.show();//&#x8C03;&#x7528;Vehicle&#x7C7B;&#x7684;&#x76F8;&#x5173;&#x65B9;&#x6CD5;
+
+    }
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x5F88;&#x663E;&#x7136;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x5728;&#x7F16;&#x7801;&#x65F6;&#x5C31;&#x5DF2;&#x7ECF;&#x786E;&#x5B9A;Driver&#x7C7B;&#x7684;callShow(Vehicle v)&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x4E3A;Vehicle&#xFF0C;&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#xFF0C;&#x8C03;&#x7528;Vehicle&#x7C7B;&#x7684;show()&#x65B9;&#x6CD5;&#xFF0C;&#x663E;&#x793A;&#x8F66;&#x8F86;&#x4FE1;&#x606F;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x7F16;&#x8BD1;&#x7684;&#x65F6;&#x5019;&#x5E76;&#x4E0D;&#x77E5;&#x9053;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5047;&#x8BBE;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x7A0B;&#x5E8F;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x8981;&#x6C42;&#x7528;&#x6237;&#x8F93;&#x5165;&#x4E00;&#x4E2A;Java&#x7C7B;&#x5168;&#x540D;&#xFF0C;&#x7136;&#x540E;&#x9700;&#x8981;&#x7A0B;&#x5E8F;&#x5217;&#x51FA;&#x8FD9;&#x4E2A;Java&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x5982;&#x4F55;&#x529E;&#x5462;&#xFF1F;&#x8BF7;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>import java.util.Scanner;
+
+import java.lang.reflect.*; 
+
+import com.bd.zuche.*;
+
+class TestRef
+
+{
+
+public static void main(String[] args) 
+
+{
+
+Scanner input = new Scanner(System.in);
+
+System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x4E00;&#x4E2A;Java&#x7C7B;&#x5168;&#x540D;&#xFF1A;&quot;);
+
+String cName = input.next();
+
+showMethods(cName);
+
+}
+
+public static void showMethods(String name)
+
+{
+
+try{
+
+Class c = Class.forName(name);
+
+Method m[] = c.getDeclaredMethods(); 
+
+System.out.print(&quot;&#x8BE5;Java&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x6709;&#xFF1A;&quot;);
+
+for (int i = 0; i &lt; m.length; i++)
+
+{
+
+System.out.println(m[i].toString()); 
+
+}
+
+}catch (Exception e){
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x5206;&#x522B;&#x8F93;&#x5165;java.lang.Object&#x548C;com.bd.zuche.Car&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.1&#x548C;&#x56FE;5.2&#x6240;&#x793A;&#xFF0C;&#x56FE;&#x4E2D;&#x5217;&#x51FA;&#x4E86;Object&#x7C7B;&#x548C;Car&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x56FE;5.1  Object&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;</p>
+<p>&#x56FE;5.2  Car&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;</p>
+<p>&#x2003;&#x2003;&#x8FD9;&#x662F;&#x4E2A;&#x5F88;&#x6709;&#x610F;&#x601D;&#x7684;&#x6848;&#x4F8B;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7C7B;&#x540D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7A0B;&#x5E8F;&#x80FD;&#x81EA;&#x52A8;&#x7ED9;&#x7528;&#x6237;&#x5217;&#x51FA;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x3002;&#x7528;&#x8FC7;Eclipse&#x8FD9;&#x79CD;&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x80FD;&#x4F1A;&#x89C9;&#x5F97;&#x4F3C;&#x66FE;&#x76F8;&#x8BC6;&#xFF0C;&#x6BD4;&#x5982;&#x7A0B;&#x5E8F;&#x5458;&#x4F7F;&#x7528;Eclipse&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x7C7B;Car&#xFF0C;&#x91CC;&#x9762;&#x5199;&#x4E86;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x518D;&#x521B;&#x5EFA;Car&#x7C7B;&#x5BF9;&#x8C61;car&#x5E76;&#x8F93;&#x5165;car.&#x65F6;&#xFF0C;Eclipse&#x4F1A;&#x5F39;&#x51FA;car&#x5BF9;&#x8C61;&#x53EF;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x7ED9;&#x7A0B;&#x5E8F;&#x5458;&#x9009;&#x62E9;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4F5C;&#x4E3A;&#x7A0B;&#x5E8F;&#x5458;&#xFF0C;&#x7F16;&#x5199;&#x7B80;&#x5355;&#x7684;Java&#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x673A;&#x4F1A;&#x4E0D;&#x591A;&#x3002;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x4E00;&#x822C;&#x5728;&#x6846;&#x67B6;&#x4E2D;&#x4F7F;&#x7528;&#x8F83;&#x591A;&#xFF0C;&#x56E0;&#x4E3A;&#x6846;&#x67B6;&#x8981;&#x9002;&#x7528;&#x66F4;&#x591A;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5BF9;&#x7075;&#x6D3B;&#x6027;&#x8981;&#x6C42;&#x8F83;&#x9AD8;&#xFF0C;&#x800C;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x6B63;&#x597D;&#x80FD;&#x89E3;&#x51B3;&#x8FD9;&#x79CD;&#x7075;&#x6D3B;&#x6027;&#x8981;&#x6C42;&#x3002;</p>
+<h2 id="52--class&#x7C7B;">5.2  Class&#x7C7B;</h2>
+<p>&#x2003;&#x2003;&#x5728;JDK&#x4E2D;&#xFF0C;java.lang.reflect&#x5305;&#x63D0;&#x4F9B;&#x4E86;&#x7C7B;&#x548C;&#x63A5;&#x53E3;&#xFF0C;&#x4EE5;&#x83B7;&#x5F97;&#x5173;&#x4E8E;&#x7C7B;&#x548C;&#x5BF9;&#x8C61;&#x7684;&#x53CD;&#x5C04;&#x4FE1;&#x606F;&#x3002;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x5141;&#x8BB8;&#x901A;&#x8FC7;&#x7F16;&#x7A0B;&#xFF0C;&#x8BBF;&#x95EE;&#x5173;&#x4E8E;&#x52A0;&#x8F7D;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x3001;&#x65B9;&#x6CD5;&#x548C;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x5BF9;&#x5C5E;&#x6027;&#x3001;&#x65B9;&#x6CD5;&#x548C;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;java.lang&#x5305;&#x4E2D;&#x7684;Class&#x7C7B;&#x548C;java.lang.reflect&#x5305;&#x4E2D;&#x7684;Method&#x7C7B;&#x3001;Field&#x7C7B;&#x3001;Constructor&#x7C7B;&#x3001;Array&#x7C7B;&#x5C06;&#x662F;&#x672C;&#x7AE0;&#x91CD;&#x70B9;&#x4ECB;&#x7ECD;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<h3 id="521--class&#x7C7B;&#x6982;&#x8FF0;">5.2.1  Class&#x7C7B;&#x6982;&#x8FF0;</h3>
+<p>&#x2003;&#x2003;&#x4E0E;&#x591A;&#x6570;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7528;&#x5230;&#x7684;&#x7C7B;&#x4E0D;&#x540C;&#xFF0C;Class&#x7C7B;&#x5728;java.lang&#x5305;&#x4E2D;&#xFF0C;&#x4E0D;&#x5728;java.lang.reflect&#x5305;&#x4E2D;&#x3002;Class&#x7C7B;&#x7EE7;&#x627F;&#x81EA;Object&#x7C7B;&#xFF0C;&#x662F;Java&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E2A;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x4FE1;&#x606F;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;Class&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x3002;&#x4F8B;&#x5982;&#x521A;&#x624D;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x901A;&#x8FC7;getDeclaredMethods()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x7C7B;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x3002;&#x4E0B;&#x9762;&#x5217;&#x4E3E;&#x4E86;&#x83B7;&#x53D6;Class&#x7C7B;&#x7684;&#x51E0;&#x79CD;&#x65B9;&#x6CD5;&#x3002;</p>
+<ul>
+<li>Class.forName()</li>
+</ul>
+<p>Class c = Class.forName(&quot;java.lang.Object&quot;);</p>
+<ul>
+<li>&#x7C7B;&#x540D;.class</li>
+</ul>
+<pre><code>Class c = Car.class;
+</code></pre><ul>
+<li>&#x5305;&#x88C5;&#x7C7B;.TYPE</li>
+</ul>
+<pre><code>Class c = Integer.TYPE;
+</code></pre><ul>
+<li>&#x5BF9;&#x8C61;&#x540D;.getClass()</li>
+</ul>
+<pre><code>String name=&quot;&#x5927;&#x529B;&#x58EB;&quot;;
+
+Class c = name.getClass();
+</code></pre><ul>
+<li>Class&#x7C7B;.getSuperClass()</li>
+</ul>
+<pre><code>Class c = String.TYPE. getSuperClass();
+</code></pre><p>&#x2003;&#x2003;&#x8FD9;&#x91CC;&#x52A1;&#x5FC5;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x53EA;&#x6709;&#x901A;&#x8FC7;Class&#x7C7B;. getSuperClass()&#x65B9;&#x6CD5;&#x624D;&#x80FD;&#x83B7;&#x5F97;Class&#x7C7B;&#x7684;&#x7236;&#x7C7B;&#x7684;Class&#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;name.getSuperClass()&#x83B7;&#x53D6;name&#x5BF9;&#x8C61;&#x7236;&#x7C7B;&#x7684;Class&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6848;&#x4F8B;&#x6765;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x901A;&#x8FC7;&#x4EE5;&#x4E0A;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#x83B7;&#x53D6;Class&#x7C7B;&#x5BF9;&#x8C61;&#x3002;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.3&#x6240;&#x793A;&#x3002;</p>
+<pre><code>import java.lang.reflect.*;
+
+public class TestClass{
+
+public static void main(String[] args) {
+
+//&#x5982;&#x679C;&#x5C06;&#x88AB;&#x5EFA;&#x6A21;&#x7684;&#x7C7B;&#x7C7B;&#x578B;&#x672A;&#x77E5;&#xFF0C;&#x7528;Class&lt;?&gt;&#x8868;&#x793A;
+
+Class&lt;?&gt; c1 = null;
+
+Class&lt;?&gt; c2 = null;
+
+Class&lt;?&gt; c3 = null;
+
+Class&lt;?&gt; c4 = null;
+
+Class&lt;?&gt; c5 = null;
+
+try{
+
+//&#x5EFA;&#x8BAE;&#x91C7;&#x7528;&#x8FD9;&#x79CD;&#x5F62;&#x5F0F;
+
+c1 = Class.forName(&quot;java.lang.Object&quot;);
+
+}catch(Exception e){
+
+&#x200B;         e.printStackTrace();
+
+}
+
+c2 = new TestClass().getClass();
+
+c3 = TestClass.class;
+
+String name = new String(&quot;&#x5927;&#x529B;&#x58EB;&quot;);
+
+c4 = name.getClass();
+
+c5 = name.getClass().getSuperclass();
+
+System.out.println(&quot;Class.forName(\&quot;java.lang.Object\&quot;) &#x7C7B;&#x540D;&#x79F0;:&quot; + c1.getName());
+
+System.out.println(&quot;new TestClass().getClass() &#x7C7B;&#x540D;&#x79F0;:&quot; + c2.getName());
+
+System.out.println(&quot;TestClass.class &#x7C7B;&#x540D;&#x79F0;:&quot; + c3.getName());
+
+System.out.println(&quot;String name = \&quot;&#x5927;&#x529B;&#x58EB;\&quot;&quot;);
+
+System.out.println(&quot;name.getClass() &#x7C7B;&#x540D;&#x79F0;:&quot; + c4.getName());
+
+System.out.println(&quot;name.getClass().getSuperclass() &#x7C7B;&#x540D;&#x79F0;:&quot; + c5.getName());
+
+}
+
+}
+</code></pre><p>&#x56FE;5.3  &#x83B7;&#x53D6;Class&#x7C7B;&#x5BF9;&#x8C61;</p>
+<h3 id="522--class&#x7C7B;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">5.2.2  Class&#x7C7B;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
+<p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x5217;&#x4E3E;&#x4E86;Class&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x672C;&#x7AE0;&#x7684;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x88AB;&#x9891;&#x7E41;&#x5730;&#x4F7F;&#x7528;&#x3002;</p>
+<ul>
+<li>Field[] getFields()  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;Field&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x53EF;&#x8BBF;&#x95EE;&#x516C;&#x5171;&#x5C5E;&#x6027;&#xFF08;&#x542B;&#x7EE7;&#x627F;&#x7684;&#x516C;&#x5171;&#x5C5E;&#x6027;&#xFF09;&#x3002;  </p>
+<ul>
+<li>Field[] getDeclaredFields()  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;Field&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#xFF08;&#x4E0D;&#x542B;&#x7EE7;&#x627F;&#x7684;&#x5C5E;&#x6027;&#xFF09;&#x3002;  </p>
+<ul>
+<li>Field getField(String name)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x516C;&#x5171;&#x5C5E;&#x6027;&#x540D;&#x7684;Field&#x5BF9;&#x8C61;&#x3002;  </p>
+<ul>
+<li>Method[] getMethods()  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;Method&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x53EF;&#x8BBF;&#x95EE;&#x516C;&#x5171;&#x65B9;&#x6CD5;&#xFF08;&#x542B;&#x7EE7;&#x627F;&#x7684;&#x516C;&#x5171;&#x65B9;&#x6CD5;&#xFF09;&#x3002;  </p>
+<ul>
+<li>Method[] getDeclaredMethods()  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;Method&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF08;&#x4E0D;&#x542B;&#x7EE7;&#x627F;&#x7684;&#x65B9;&#x6CD5;&#xFF09;&#x3002;  </p>
+<ul>
+<li>Constructor[] getConstructors()  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;Constructor&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x516C;&#x5171;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x3002;  </p>
+<ul>
+<li>Constructor getConstructor(Class[] args)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#x5217;&#x8868;&#x7684;Constructor&#x5BF9;&#x8C61;&#x3002;  </p>
+<ul>
+<li>Class[] getInterfaces()   </li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;Class&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x7684;&#x63A5;&#x53E3;&#x3002;  </p>
+<ul>
+<li>T newInstance()  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x4F7F;&#x7528;&#x65E0;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x8BE5;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x5B9E;&#x4F8B;&#x3002;  </p>
+<ul>
+<li>String getName()  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x4EE5;String&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x8BE5;&#x7C7B;&#xFF08;&#x7C7B;&#x3001;&#x63A5;&#x53E3;&#x3001;&#x6570;&#x7EC4;&#x7C7B;&#x3001;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x6216;void&#xFF09;&#x7684;&#x5B8C;&#x6574;&#x540D;&#x3002;  </p>
+<h2 id="53--&#x4E0A;&#x673A;&#x4EFB;&#x52A1;">5.3  &#x4E0A;&#x673A;&#x4EFB;&#x52A1;</h2>
+<h4 id="&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;51&#x8282;&#x548C;52&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;">&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;5.1&#x8282;&#x548C;5.2&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;</h4>
+<p>&#x65F6;&#x95F4;&#xFF1A;20&#x5206;&#x949F;&#x3002;</p>
+<p>&#x5F62;&#x5F0F;&#xFF1A;&#x6BCF;&#x4E2A;&#x5B66;&#x5458;&#x72EC;&#x7ACB;&#x5B8C;&#x6210;&#xFF0C;&#x5C0F;&#x7EC4;&#x7EC4;&#x957F;&#x68C0;&#x67E5;&#x3002;</p>
+<p>&#x5DE5;&#x5177;&#xFF1A;EditPlus&#x3002;</p>
+<h2 id="54--&#x83B7;&#x53D6;&#x7C7B;&#x4FE1;&#x606F;">5.4  &#x83B7;&#x53D6;&#x7C7B;&#x4FE1;&#x606F;</h2>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x4ECB;&#x7ECD;Class&#x7C7B;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5DF2;&#x7ECF;&#x53D1;&#x73B0;&#xFF0C;Class&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;Method&#x3001;Field&#x3001;Constructor&#x8FD9;&#x4E9B;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C06;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x83B7;&#x53D6;Class&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x3001;&#x5C5E;&#x6027;&#x3001;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x65B9;&#x9762;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="541--&#x83B7;&#x53D6;&#x65B9;&#x6CD5;">5.4.1  &#x83B7;&#x53D6;&#x65B9;&#x6CD5;</h3>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;Class&#x7C7B;&#x7684;getMethods()&#x65B9;&#x6CD5;&#x3001;getDeclaredMethods()&#x65B9;&#x6CD5;&#x3001;getMethod(String name, Class[] args)&#x65B9;&#x6CD5;&#x548C;getDeclaredMethod(String name, Class[] args)&#x7B49;&#x65B9;&#x6CD5;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x7279;&#x5B9A;&#x65B9;&#x6CD5;&#x7EC4;&#x6216;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;Method&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x6216;Method&#x5BF9;&#x8C61;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6848;&#x4F8B;&#x6765;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x8BE6;&#x7EC6;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x7684;&#x4FE1;&#x606F;&#xFF08;&#x65B9;&#x6CD5;&#x540D;&#x3001;&#x53C2;&#x6570;&#x5217;&#x8868;&#x548C;&#x5F02;&#x5E38;&#x5217;&#x8868;&#xFF09;&#x3002;</p>
+<pre><code>import java.lang.reflect.*;
+
+public class TestMethod{
+
+public static void main(String args[]) {
+
+try {
+
+Class c = Class.forName(&quot;org.w3c.dom.NodeList&quot;);
+
+//&#x8FD4;&#x56DE;Method&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF08;&#x4E0D;&#x542B;&#x7EE7;&#x627F;&#x7684;&#xFF09;
+
+Method mlist[] = c.getDeclaredMethods();
+
+System.out.println(&quot;NodeList&#x7C7B;getDeclaredMethods()&#x5F97;&#x5230;&#x7684;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;&quot;);
+
+//&#x904D;&#x5386;&#x6240;&#x6709;&#x65B9;&#x6CD5;
+
+for (int i = 0; i &lt; mlist.length; i++){
+
+System.out.println(&quot;****************************************&quot;);
+
+Method m = mlist[i]; 
+
+System.out.println(&quot;&#x65B9;&#x6CD5;&quot; + (i+1) + &quot;&#x540D;&#x79F0;&#x4E3A;&#xFF1A;&quot; + m.getName());//&#x5F97;&#x5230;&#x65B9;&#x6CD5;&#x540D;
+
+System.out.println(&quot;&#x8BE5;&#x65B9;&#x6CD5;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x4E3A;&#xFF1A;&quot; + m.getDeclaringClass());
+
+//&#x8FD4;&#x56DE;Class&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x8868;&#x793A;Method&#x5BF9;&#x8C61;&#x6240;&#x8868;&#x793A;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x5F62;&#x53C2;&#x7C7B;&#x578B;
+
+Class ptl[] = m.getParameterTypes();
+
+for (int j = 0; j &lt; ptl.length; j++)
+
+System.out.println(&quot;&#x5F62;&#x53C2;&quot; + (j+1) + &quot; &#x7C7B;&#x578B;&#x4E3A;&#xFF1A;&quot; + ptl[j]);
+
+//&#x8FD4;&#x56DE;Class&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x8868;&#x793A;Method&#x5BF9;&#x8C61;&#x6240;&#x8868;&#x793A;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x5F02;&#x5E38;&#x5217;&#x8868;
+
+Class etl[] = m.getExceptionTypes();
+
+for (int j = 0; j &lt; etl.length; j++)
+
+System.out.println(&quot;&#x5F02;&#x5E38;&quot; + (j+1) + &quot; &#x7C7B;&#x578B;&#x4E3A;&#xFF1A;&quot; + etl[j]);
+
+System.out.println(&quot;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x4E3A;&#xFF1A;&quot; + m.getReturnType());
+
+}
+
+} catch (Exception e) {
+
+e.printStackTrace();
+
+}       
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x4E3A;&#x4E86;&#x4F7F;&#x7A0B;&#x5E8F;&#x8F93;&#x51FA;&#x7684;&#x5185;&#x5BB9;&#x4E0D;&#x8981;&#x592A;&#x591A;&#xFF0C;&#x6240;&#x4EE5;&#x9009;&#x62E9;&#x4E86;&#x4EC5;&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;org.w3c.dom.NodeList&#x63A5;&#x53E3;&#xFF0C;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;&#x4FE1;&#x606F;&#x3002;&#x6848;&#x4F8B;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;Method&#x7C7B;&#x7684;getName()&#x3001;getDeclaringClass()&#x3001;getParameterTypes()&#x3001;getExceptionTypes()&#x3001;getReturnType()&#x65B9;&#x6CD5;&#xFF0C;&#x4F5C;&#x7528;&#x5206;&#x522B;&#x4E3A;&#x83B7;&#x5F97;&#x65B9;&#x6CD5;&#x540D;&#x79F0;&#x3001;&#x65B9;&#x6CD5;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x540D;&#xFF0C;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x65B9;&#x6CD5;&#x7684;&#x5F02;&#x5E38;&#x5217;&#x8868;&#x4EE5;&#x53CA;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.4&#x6240;&#x793A;&#xFF0C;&#x56E0;&#x4E3A;NodeList&#x63A5;&#x53E3;&#x7684;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x6CA1;&#x6709;&#x5FC5;&#x987B;&#x8981;&#x6355;&#x83B7;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x6240;&#x4EE5;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x4E2D;&#x6CA1;&#x6709;&#x663E;&#x793A;&#x51FA;&#x5F02;&#x5E38;&#x5217;&#x8868;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x56FE;5.4  &#x83B7;&#x53D6;&#x7C7B;&#x65B9;&#x6CD5;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</p>
+<p>&#x2003;&#x2003;&#x63A5;&#x4E0B;&#x6765;&#x5728;&#x4E0A;&#x9762;&#x6848;&#x4F8B;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x8BF4;&#x660E;Class&#x7C7B;&#x7684;getDeclaredMethods()&#x65B9;&#x6CD5;&#x548C;getMethods()&#x65B9;&#x6CD5;&#x7684;&#x533A;&#x522B;&#x3002;&#x5148;&#x521B;&#x5EFA;Sub&#x548C;Super&#x4E24;&#x4E2A;&#x7C7B;&#xFF0C;&#x5176;&#x4E2D;Sub&#x662F;&#x7EE7;&#x627F;&#x81EA;Super&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x6BCF;&#x4E2A;&#x7C7B;&#x4E2D;&#x90FD;&#x6709;&#x56DB;&#x79CD;&#x4E0D;&#x540C;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>public class Sub extends Super
+
+{
+
+private int subPri = 11;
+
+int subPac = 12;
+
+protected double subPro = 13;
+
+public String subPub = &quot;14&quot;;
+
+private void subPrivate(){}
+
+int subPackage(){return subPac;}
+
+protected double subProtected(){return subPro;}
+
+public String subPublic(){return subPub;}       
+
+}
+
+class Super
+
+{
+
+private int supPri = 1;
+
+int supPac = 2;
+
+protected double supPro = 3;
+
+public String supPub = &quot;4&quot;;
+
+private void supPrivate(){}
+
+int supPackage(){return supPac;}
+
+protected double supProtected(){return supPro;}
+
+public String supPublic(){return supPub;}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x4FEE;&#x6539;TestMethod&#x7C7B;&#x4EE3;&#x7801;&#xFF0C;&#x5C06;&#x88C5;&#x5165;&#x7C7B;&#x4ECE;org.w3c.dom.NodeList&#x6539;&#x4E3A;Sub&#xFF0C;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x89C2;&#x5BDF;Sub&#x7C7B;&#x7684;Class&#x5BF9;&#x8C61;&#x8C03;&#x7528;getDeclaredMethods()&#x65B9;&#x6CD5;&#xFF0C;&#x83B7;&#x5F97;&#x4E86;Sub&#x7C7B;&#x7684;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.5&#x6240;&#x793A;&#x3002;</p>
+<p>&#x56FE;5.5  getDeclaredMethods()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>&#x2003;&#x2003;&#x4ECE;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;Class&#x7C7B;&#x7684;getDeclaredMethods()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x4E86;Class&#x6240;&#x8868;&#x793A;&#x7684;Sub&#x7C7B;&#x7684;&#x5168;&#x90E8;&#x79C1;&#x6709;&#x3001;&#x9ED8;&#x8BA4;&#x3001;&#x53D7;&#x4FDD;&#x62A4;&#x548C;&#x516C;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x4E0D;&#x5305;&#x62EC;&#x7EE7;&#x627F;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x5982;&#x679C;Super&#x7C7B;&#x548C;Sub&#x7C7B;&#x5728;&#x540C;&#x4E00;&#x4E2A;Java&#x6E90;&#x6587;&#x4EF6;&#x4E2D;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF0C;&#x663E;&#x793A;&#x7684;&#x7ED3;&#x679C;&#x4F1A;&#x5305;&#x62EC;&#x7236;&#x7C7B;&#x516C;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#xFF09;&#x3002;&#x82E5;&#x5C06;TestMethod&#x4EE3;&#x7801;&#x4E2D;&#x7684;getDeclaredMethods()&#x65B9;&#x6CD5;&#x518D;&#x6539;&#x4E3A;getMethods()&#xFF0C;&#x5219;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.6&#x6240;&#x793A;&#x3002;</p>
+<p>&#x56FE;5.6  getMethods()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>&#x2003;&#x2003;&#x4ECE;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF08;&#x8F93;&#x51FA;&#x5185;&#x5BB9;&#x8F83;&#x591A;&#xFF0C;&#x4EC5;&#x622A;&#x9009;&#x4E86;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#xFF09;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;Class&#x7C7B;&#x7684;getMethods()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x4E86;Class&#x6240;&#x8868;&#x793A;&#x7684;Sub&#x7C7B;&#x53CA;&#x5176;&#x7236;&#x7C7B;&#x6240;&#x6709;&#x7684;&#x516C;&#x5171;&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="542--&#x83B7;&#x53D6;&#x5C5E;&#x6027;">5.4.2  &#x83B7;&#x53D6;&#x5C5E;&#x6027;</h3>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x4E0A;&#x4E00;&#x5C0F;&#x8282;&#x7684;&#x5B66;&#x4E60;&#xFF0C;&#x5DF2;&#x7ECF;&#x83B7;&#x5F97;Class&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x64CD;&#x4F5C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x6570;&#x7EC4;&#x91CC;&#x7684;Method&#x5BF9;&#x8C61;&#xFF0C;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x3002;&#x4E00;&#x4E2A;&#x7C7B;&#x9664;&#x4E86;&#x6709;&#x65B9;&#x6CD5;&#x5916;&#xFF0C;&#x5269;&#x4E0B;&#x6700;&#x91CD;&#x8981;&#x7684;&#x90E8;&#x5206;&#x5E94;&#x8BE5;&#x5C31;&#x662F;&#x5C5E;&#x6027;&#x4E86;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6848;&#x4F8B;&#x6765;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x83B7;&#x53D6;Sub&#x7C7B;&#x7684;&#x76F8;&#x5173;&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code>
+import java.lang.reflect.*;
+
+import java.util.Scanner;
+
+public class TestField{
+
+public static void main(String args[]) {
+
+try {
+
+Class c = Class.forName(&quot;Sub&quot;);
+
+Scanner input = new Scanner(System.in);
+
+System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x4F60;&#x60F3;&#x83B7;&#x53D6;Sub&#x7C7B;&#x7684;&#x54EA;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x7C7B;&#x578B;&#xFF1A;&quot;);
+
+String name = input.next();
+
+//&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x540D;&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x5BF9;&#x8C61;
+
+Field sf = c.getDeclaredField(name);
+
+//&#x5F97;&#x5230;&#x5C5E;&#x6027;&#x7C7B;&#x578B;
+
+System.out.println(&quot;Sub&#x7C7B;&quot; + name + &quot;&#x5C5E;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x4E3A;&#xFF1A;&quot; + sf.getType());
+
+System.out.println(&quot;****************************************&quot;);
+
+//&#x8FD4;&#x56DE;Field&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#xFF08;&#x4E0D;&#x542B;&#x7EE7;&#x627F;&#x7684;&#xFF09;
+
+Field flist[] = c.getDeclaredFields();
+
+System.out.println(&quot;Sub&#x7C7B;getDeclaredFields()&#x5F97;&#x5230;&#x7684;&#x5C5E;&#x6027;&#x5982;&#x4E0B;&#xFF1A;&quot;);
+
+//&#x904D;&#x5386;&#x6240;&#x6709;&#x5C5E;&#x6027;
+
+for (int i = 0; i &lt; flist.length; i++){
+
+System.out.println(&quot;****************************************&quot;);
+
+Field f = flist[i]; 
+
+System.out.println(&quot;&#x5C5E;&#x6027;&quot; + (i+1) + &quot;&#x540D;&#x79F0;&#x4E3A;&#xFF1A;&quot; + f.getName());        //&#x5F97;&#x5230;&#x5C5E;&#x6027;&#x540D;
+
+System.out.println(&quot;&#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x4E3A;&#xFF1A;&quot; + f.getDeclaringClass());
+
+System.out.println(&quot;&#x8BE5;&#x5C5E;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x4E3A;&#xFF1A;&quot; + f.getType());            //&#x5F97;&#x5230;&#x5C5E;&#x6027;&#x7C7B;&#x578B;
+
+//&#x4EE5;&#x6574;&#x6570;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x7531;&#x6B64;Field&#x5BF9;&#x8C61;&#x8868;&#x793A;&#x7684;&#x5C5E;&#x6027;&#x7684;Java&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x4FEE;&#x9970;&#x7B26;
+
+int m = f.getModifiers();
+
+//&#x4F7F;&#x7528;Modifier&#x7C7B;&#x5BF9;&#x8868;&#x793A;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x4FEE;&#x9970;&#x7B26;&#x7684;&#x6574;&#x6570;&#x8FDB;&#x884C;&#x89E3;&#x7801;&#x663E;&#x793A;
+
+System.out.println(&quot;&#x8BE5;&#x5C5E;&#x6027;&#x7684;&#x4FEE;&#x9970;&#x7B26;&#x4E3A;&#xFF1A;&quot; + Modifier.toString(m));
+
+}
+
+} catch (Exception e) {
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x6848;&#x4F8B;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;Field&#x7C7B;&#x7684;getType()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x7684;&#x7C7B;&#x578B;&#xFF0C;getName()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x540D;&#x3001;getDeclaringClass()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x540D;&#x79F0;&#xFF0C;getModifiers()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x4EE5;&#x6574;&#x6570;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x7531;&#x6B64;Field&#x5BF9;&#x8C61;&#x8868;&#x793A;&#x7684;&#x5C5E;&#x6027;&#x7684;Java&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x4FEE;&#x9970;&#x7B26;&#xFF08;&#x503C;&#x4E3A;m&#xFF09;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;Modifier.toString(m)&#x83B7;&#x53D6;Java&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x4FEE;&#x9970;&#x7B26;&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.7&#x6240;&#x793A;&#x3002;&#x6CE8;&#x610F;&#x7A0B;&#x5E8F;&#x4E2D;&#x9996;&#x5148;&#x4F7F;&#x7528;&#x4E86;getDeclaredField(name)&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x4E86;&#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x540D;&#x7684;&#x5C5E;&#x6027;&#x5BF9;&#x8C61;&#x3002;&#x83B7;&#x53D6;Sub&#x7C7B;&#x5C5E;&#x6027;&#x7684;&#x65B9;&#x6CD5;&#x662F;getDeclaredFields()&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;Sub&#x7C7B;&#x7684;&#x5168;&#x90E8;&#x5C5E;&#x6027;&#xFF08;&#x4E0D;&#x542B;&#x7EE7;&#x627F;&#x7684;&#x5C5E;&#x6027;&#xFF09;&#x3002;&#x5982;&#x679C;&#x60F3;&#x83B7;&#x5F97;Sub&#x7C7B;&#x6240;&#x6709;&#x516C;&#x5171;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x8C03;&#x7528;getFields()&#x65B9;&#x6CD5;&#x3002;&#x5C06;&#x7A0B;&#x5E8F;&#x4E2D;getDeclaredFields()&#x65B9;&#x6CD5;&#x6539;&#x4E3A;getFields()&#xFF0C;&#x518D;&#x6B21;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x3002;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.8&#x6240;&#x793A;&#x3002;</p>
+<p>&#x56FE;5.7  getDeclaredFields()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x5C5E;&#x6027;</p>
+<p>&#x56FE;5.8  getFields()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x5C5E;&#x6027;</p>
+<h3 id="543--&#x83B7;&#x53D6;&#x6784;&#x9020;&#x65B9;&#x6CD5;">5.4.3  &#x83B7;&#x53D6;&#x6784;&#x9020;&#x65B9;&#x6CD5;</h3>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;Class&#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;getDeclaredMethods()&#x548C;getMethods()&#x7B49;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;&#x7684;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x83B7;&#x5F97;&#x666E;&#x901A;&#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x80FD;&#x83B7;&#x5F97;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x901A;&#x8FC7;Class&#x7C7B;&#x7684;getConstructors()&#x65B9;&#x6CD5;&#x548C; getDeclaredConstructors()&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;Constructor&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x3002;&#x4E0B;&#x9762;&#x9996;&#x5148;&#x6539;&#x9020;Sub&#x7C7B;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>public class Sub extends Super
+
+{
+
+public Sub(){}
+
+public Sub(int pri,int pac,double pro,String pub)
+
+{
+
+this.subPri = pri;
+
+this.subPac = pac;
+
+this.subPro = pro;
+
+this.subPub = pub;
+
+}                
+
+protected Sub(int pri,int pac,double pro){this(pri,pac,pro,&quot;14&quot;);}
+
+Sub(int pri,int pac)throws Exception{this(pri,pac,13.0,&quot;14&quot;);}    
+
+private Sub(int pri){this(pri,12,13.0,&quot;14&quot;);}
+
+private int subPri = 11;
+
+int subPac = 12;
+
+protected double subPro = 13;
+
+public String subPub = &quot;14&quot;;
+
+}
+
+class Super
+
+{       
+
+public Super(){}
+
+public Super(int pri,int pac,double pro,String pub)
+
+{
+
+this.supPri = pri;
+
+this.supPac = pac;
+
+this.supPro = pro;
+
+this.supPub = pub;
+
+}
+
+protected Super(int pri,int pac,double pro){this(pri,pac,pro,&quot;4&quot;);}
+
+Super(int pri,int pac)throws Exception{this(pri,pac,3.0,&quot;4&quot;);}     
+
+private Super(int pri){this(pri,2,3.0,&quot;4&quot;);}
+
+private int supPri = 1;
+
+int supPac = 2;
+
+protected double supPro = 3;
+
+public String supPub = &quot;4&quot;;
+
+}
+</code></pre><p>&#x2003;&#x2003;Sub&#x7C7B;&#x4ECD;&#x7136;&#x7EE7;&#x627F;Super&#x7C7B;&#xFF0C;&#x6BCF;&#x4E2A;&#x7C7B;&#x4E2D;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x65E0;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x548C;&#x56DB;&#x4E2A;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x7684;&#x6709;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x3002;&#x901A;&#x8FC7;Class&#x7C7B;&#x83B7;&#x53D6;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>import java.lang.reflect.*;
+
+public class TestConstructor{
+
+public static void main(String args[]) {
+
+try {
+
+Class c = Class.forName(&quot;Sub&quot;);
+
+//&#x8FD4;&#x56DE;Constructor&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x6784;&#x9020;&#x65B9;&#x6CD5;
+
+Constructor clist[] = c.getDeclaredConstructors();
+
+//&#x8FD4;&#x56DE;Constructor&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x516C;&#x5171;&#x6784;&#x9020;&#x65B9;&#x6CD5;
+
+//Constructor clist[] = c.getConstructors();
+
+System.out.println(&quot;Sub&#x7C7B;getDeclaredConstructors()&#x5F97;&#x5230;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;&quot;);
+
+int i = 0;
+
+//&#x904D;&#x5386;&#x6240;&#x6709;&#x6784;&#x9020;&#x65B9;&#x6CD5;
+
+for(Constructor con:clist){
+
+System.out.println(&quot;****************************************&quot;);
+
+System.out.println(&quot;&#x6784;&#x9020;&#x65B9;&#x6CD5;&quot; + (i+1) + &quot;&#x540D;&#x79F0;&#x4E3A;&#xFF1A;&quot; + con.getName());//&#x5F97;&#x5230;&#x65B9;&#x6CD5;&#x540D;
+
+System.out.println(&quot;&#x8BE5;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x4E3A;&#xFF1A;&quot; + con.getDeclaringClass());
+
+//&#x8FD4;&#x56DE;Class&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x8868;&#x793A;Constructor&#x5BF9;&#x8C61;&#x6240;&#x8868;&#x793A;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7684;&#x5F62;&#x53C2;&#x7C7B;&#x578B;
+
+Class ptl[] = con.getParameterTypes();
+
+for (int j = 0; j &lt; ptl.length; j++)
+
+System.out.println(&quot;&#x5F62;&#x53C2;&quot; + (j+1) + &quot; &#x7C7B;&#x578B;&#x4E3A;&#xFF1A;&quot; + ptl[j]);
+
+//&#x8FD4;&#x56DE;Class&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x8868;&#x793A;Constructor&#x5BF9;&#x8C61;&#x6240;&#x8868;&#x793A;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x5F02;&#x5E38;&#x5217;&#x8868;
+
+Class etl[] = con.getExceptionTypes();
+
+for (int j = 0; j &lt; etl.length; j++)
+
+System.out.println(&quot;&#x5F02;&#x5E38;&quot; + (j+1) + &quot; &#x7C7B;&#x578B;&#x4E3A;&#xFF1A;&quot; + etl[j]);
+
+i++;
+
+}
+
+} catch (Exception e) {
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x5206;&#x522B;&#x8C03;&#x7528;Sub&#x7C7B;&#x6240;&#x5C5E;Class&#x7684;getDeclaredConstructors()&#x548C;getConstructors()&#x65B9;&#x6CD5;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.9&#x548C;&#x56FE;5.10&#x6240;&#x793A;&#x3002;&#x5176;&#x4E2D;getDeclaredConstructors()&#x65B9;&#x6CD5;&#x5F97;&#x5230;&#x4E86;Sub&#x7C7B;&#x91CC;&#x58F0;&#x660E;&#x7684;&#x5168;&#x90E8;&#x4E94;&#x4E2A;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;getConstructors()&#x65B9;&#x6CD5;&#x5F97;&#x5230;&#x4E86;Sub&#x7C7B;&#x91CC;&#x58F0;&#x660E;&#x7684;&#x4E24;&#x4E2A;&#x516C;&#x6709;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x56FE;5.9  getDeclaredConstructors()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;            &#x56FE;5.10  getConstructors()&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;</p>
+<h2 id="55--&#x4E0A;&#x673A;&#x4EFB;&#x52A1;">5.5  &#x4E0A;&#x673A;&#x4EFB;&#x52A1;</h2>
+<h4 id="&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;54&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;">&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;5.4&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;</h4>
+<p>&#x65F6;&#x95F4;&#xFF1A;30&#x5206;&#x949F;&#x3002;</p>
+<p>&#x5F62;&#x5F0F;&#xFF1A;&#x6BCF;&#x4E2A;&#x5B66;&#x5458;&#x72EC;&#x7ACB;&#x5B8C;&#x6210;&#xFF0C;&#x5C0F;&#x7EC4;&#x7EC4;&#x957F;&#x68C0;&#x67E5;&#x3002;</p>
+<p>&#x5DE5;&#x5177;&#xFF1A;EditPlus&#x3002;</p>
+<h2 id="56--&#x52A8;&#x6001;&#x8C03;&#x7528;">5.6  &#x52A8;&#x6001;&#x8C03;&#x7528;</h2>
+<p>&#x2003;&#x2003;&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x90FD;&#x662F;&#x901A;&#x8FC7;Class&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x4E86;&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x3001;&#x65B9;&#x6CD5;&#x548C;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x662F;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x90A3;&#x4E48; Java &#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x610F;&#x4E49;&#x5C31;&#x4F53;&#x73B0;&#x4E0D;&#x51FA;&#x6765;&#x4E86;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x5C06;&#x901A;&#x8FC7;&#x4E4B;&#x524D;&#x83B7;&#x53D6;&#x7684;&#x5C5E;&#x6027;&#x3001;&#x65B9;&#x6CD5;&#x548C;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x6765;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x3001;&#x4FEE;&#x6539;&#x5C5E;&#x6027;&#x548C;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="561--&#x521B;&#x5EFA;&#x5BF9;&#x8C61;">5.6.1  &#x521B;&#x5EFA;&#x5BF9;&#x8C61;</h3>
+<p>&#x2003;&#x2003;&#x524D;&#x9762;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;Class&#x7C7B;&#x83B7;&#x5F97;&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x4E00;&#x65E6;&#x83B7;&#x53D6;&#x4E86;&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x5F88;&#x81EA;&#x7136;&#x5730;&#x5C31;&#x4F1A;&#x60F3;&#x5230;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x51FA;&#x8FD9;&#x4E9B;&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x5B8C;&#x6210;&#x7A0B;&#x5E8F;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x7684;&#x76EE;&#x6807;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x7EE7;&#x7EED;&#x901A;&#x8FC7;&#x6848;&#x4F8B;&#x6765;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x6F14;&#x793A;&#xFF0C;&#x7528;&#x6765;&#x6D4B;&#x8BD5;&#x7684;&#x5BF9;&#x5E94;&#x7C7B;Super&#x7684;&#x4EE3;&#x7801;&#x8C03;&#x6574;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>class Super
+
+{       
+
+private int supPri = 1;
+
+int supPac = 2;
+
+protected double supPro = 3;
+
+public String supPub = &quot;4&quot;;
+
+
+
+public Super(){}
+
+public Super(int pri,int pac,double pro,String pub)
+
+{
+
+this.supPri = pri;
+
+this.supPac = pac;
+
+this.supPro = pro;
+
+this.supPub = pub;
+
+}
+
+protected Super(int pri,int pac,double pro){this(pri,pac,pro,&quot;4&quot;);}
+
+Super(int pri,int pac)throws Exception{this(pri,pac,3.0,&quot;4&quot;);}
+
+private Super(int pri){this(pri,2,3.0,&quot;4&quot;);}
+
+
+
+private void supPrivate(){}
+
+int supPackage(){return supPac;}
+
+protected double supProtected(){return supPro;}
+
+public String supPublic(){return supPub;}
+
+}
+
+
+
+l &#x901A;&#x8FC7;Class&#x7C7B;&#x7684;newInstance()&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;
+
+
+
+public class TestNewInstance{
+
+public static void main(String args[]) {
+
+try {
+
+Class c = Class.forName(&quot;Super&quot;);
+
+//&#x901A;&#x8FC7;Class&#x7C7B;&#x7684;newInstance()&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;
+
+Super sup = (Super)c.newInstance();
+
+System.out.println(sup.supPublic());
+
+} catch (Exception e) {
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x901A;&#x8FC7;Class&#x7C7B;&#x7684;newInstance()&#x65B9;&#x6CD5;&#x521B;&#x5EFA;Super&#x5BF9;&#x8C61;&#xFF08;&#x9700;&#x8981;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;supPublic()&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;4&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x4F3C;&#x4E4E;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x70B9;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x7AEF;&#x502A;&#x2014;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7528;&#x6237;&#x8FD0;&#x884C;&#x65F6;&#x8F93;&#x5165;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x518D;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x76F8;&#x5173;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;Class&#x7C7B;&#x7684;newInstance()&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x8981;&#x6C42;&#x8BE5;Class&#x5BF9;&#x5E94;&#x7C7B;&#x6709;&#x65E0;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x3002;&#x6267;&#x884C;newInstance()&#x65B9;&#x6CD5;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x65E0;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x8BE5;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5176;&#x4EE3;&#x7801;&#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;</p>
+<pre><code>Super sup = new Super();
+</code></pre><p>&#x2003;&#x2003;&#x5982;&#x679C;Super&#x7C7B;&#x6CA1;&#x6709;&#x65E0;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x65F6;&#x5219;&#x4F1A;&#x51FA;&#x73B0;&#x5982;&#x56FE;5.11&#x6240;&#x793A;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x629B;&#x51FA;&#x4E00;&#x4E2A;InstantiationException&#x5B9E;&#x4F8B;&#x5316;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x56FE;5.11  newInstance()&#x65B9;&#x6CD5;&#x4EA7;&#x751F;&#x5B9E;&#x4F8B;&#x5316;&#x5F02;&#x5E38;</p>
+<ul>
+<li>&#x8FC7;Constructor&#x7684;newInstance(Object[] args)&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</li>
+</ul>
+<p>&#x2003;&#x2003;&#x5982;&#x679C;&#x8981;&#x60F3;&#x4F7F;&#x7528;&#x6709;&#x53C2;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5148;&#x901A;&#x8FC7;Class&#x5BF9;&#x8C61;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7684;Constructor&#x5BF9;&#x8C61;&#xFF0C;&#x518D;&#x8C03;&#x7528;Constructor&#x5BF9;&#x8C61;&#x7684;newInstance(Object[] args)&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x8BE5;Class&#x5BF9;&#x8C61;&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>import java.lang.reflect.*;
+
+public class TestNewInstance1{
+
+public static void main(String args[]) {
+
+try {
+
+Class c = Class.forName(&quot;Super&quot;);
+
+//&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#x5217;&#x8868;(int.class,int.class)&#x7684;Constructor&#x5BF9;&#x8C61;
+
+Constructor con = c.getDeclaredConstructor(new Class[]{int.class,int.class});
+
+//&#x901A;&#x8FC7;Constructor&#x7684;newInstance(Object[] args)&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;&#x5BF9;&#x8C61;&#x5217;&#x8868;
+
+//&#x53C2;&#x6570;&#x5217;&#x8868;&#x5BF9;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x652F;&#x6301;&#x81EA;&#x52A8;&#x88C5;&#x7BB1;&#x62C6;&#x7BB1;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x53EF;&#x4EE5;&#x5199;&#x6210;newInstance(21, 22)
+
+Super sup = (Super)con.newInstance(new Object[]{21, 22});
+
+System.out.println(sup.supPackage());
+
+
+
+//&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65E0;&#x53C2;&#x7684;Constructor&#x5BF9;&#x8C61;
+
+Constructor con2 = c.getDeclaredConstructor();
+
+//&#x901A;&#x8FC7;Constructor&#x7684;newInstance()&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x65E0;&#x53C2;&#x5BF9;&#x8C61;
+
+Super sup2 = (Super)con2.newInstance();                           
+
+System.out.println(sup2.supProtected());
+
+} catch (Exception e) {
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;22&#x548C;3.0&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x901A;&#x8FC7;Class&#x5BF9;&#x8C61;&#x83B7;&#x5F97;&#x6307;&#x5B9A;Constructor&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;getDeclaredConstructor((Class[] args))&#x4E2D;&#xFF0C;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E3A;Class&#x7C7B;&#x6570;&#x7EC4;&#x3002;&#x672C;&#x4F8B;&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;new Class[]{int.class,int.class}&#x8BED;&#x53E5;&#x521B;&#x5EFA;&#x4E86;&#x8FD9;&#x4E2A;Class&#x7C7B;&#x6570;&#x7EC4;&#xFF0C;&#x8868;&#x793A;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x5185;&#x542B;&#x6709;&#x4E24;&#x4E2A;int&#x578B;&#x7684;&#x5F62;&#x53C2;&#x3002;&#x4E4B;&#x540E;&#x8C03;&#x7528;Constructor&#x7684;newInstance(Object[] args)&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x4E3A;Object&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x672C;&#x4F8B;&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;new Object[]{21, 22}&#x521B;&#x5EFA;&#x4E86;&#x6B64;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7; Constructor &#x7684; newInstance()&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x65E0;&#x53C2;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x6837;&#x5728;&#x8C03;&#x7528;getDeclaredConstructor((Class[] args))&#x548C;newInstance(Object[] args)&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E3A;&#x7A7A;&#x5373;&#x53EF;&#x3002;</p>
+<h3 id="562--&#x4FEE;&#x6539;&#x5C5E;&#x6027;">5.6.2  &#x4FEE;&#x6539;&#x5C5E;&#x6027;</h3>
+<p>&#x2003;&#x2003;&#x8FD8;&#x662F;&#x4E0A;&#x9762;&#x7684;Super&#x7C7B;&#xFF0C;&#x5176;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x6574;&#x578B;&#x7684;&#x79C1;&#x6709;&#x5C5E;&#x6027;supPri&#xFF0C;&#x521D;&#x59CB;&#x503C;&#x4E3A;1&#x3002;&#x56E0;&#x4E3A;Super&#x7C7B;&#x5E76;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x9488;&#x5BF9;supPri&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x516C;&#x6709;&#x7684;getter&#x548C;setter&#x65B9;&#x6CD5;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x8FD9;&#x4E2A;&#x7C7B;&#x5916;&#xFF0C;&#x4EE5;&#x73B0;&#x6709;&#x7684;&#x77E5;&#x8BC6;&#x662F;&#x65E0;&#x6CD5;&#x83B7;&#x5F97;&#x5E76;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#x7684;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x901A;&#x8FC7;Java&#x53CD;&#x5C04;&#x673A;&#x5236;&#x63D0;&#x4F9B;&#x7684;Field&#x7C7B;&#xFF0C;&#x5B9E;&#x73B0;&#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x4FEE;&#x6539;&#x7C7B;&#x4E2D;&#x79C1;&#x6709;&#x5C5E;&#x6027;&#x503C;&#x7684;&#x529F;&#x80FD;&#x3002;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>import java.lang.reflect.*;
+
+public class TestChangeField{
+
+public static void main(String args[]) {
+
+try {
+
+Class c = Class.forName(&quot;Super&quot;);
+
+Super sup = (Super)c.newInstance();
+
+//&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x540D;&#x83B7;&#x5F97;Field&#x5BF9;&#x8C61;
+
+Field f = c.getDeclaredField(&quot;supPri&quot;);//supPri&#x4E3A;&#x79C1;&#x6709;&#x5C5E;&#x6027;
+
+//&#x53D6;&#x6D88;&#x5C5E;&#x6027;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x63A7;&#x5236;&#xFF0C;&#x5373;&#x4F7F;private&#x5C5E;&#x6027;&#x4E5F;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;     
+
+f.setAccessible(true);
+
+//&#x8C03;&#x7528;get(Object o)&#x65B9;&#x6CD5;&#x53D6;&#x5F97;&#x5BF9;&#x8C61;o&#x5BF9;&#x5E94;&#x5C5E;&#x6027;&#x503C;
+
+System.out.println(&quot;&#x53D6;&#x6D88;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x63A7;&#x5236;&#x540E;&#x8BBF;&#x95EE;supPri&#xFF0C;&#x5176;&#x503C;&#x4E3A;&#xFF1A;&quot; + f.get(sup));
+
+//&#x8C03;&#x7528;set(Object o,Object v)&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x5BF9;&#x8C61;o&#x5BF9;&#x5E94;&#x5C5E;&#x6027;&#x503C;
+
+f.set(sup, 20); 
+
+System.out.println(&quot;f.set(sup, 20)&#x540E;&#x8BBF;&#x95EE;supPri&#xFF0C;&#x5176;&#x503C;&#x4E3A;&#xFF1A;&quot; + f.get(sup));          
+
+} catch (Exception e) {
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x9996;&#x5148;&#x901A;&#x8FC7;Class&#x5BF9;&#x8C61;&#x7684;getDeclaredField(&quot;supPri&quot;)&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x4E86;Field&#x5BF9;&#x8C61;f&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;f.setAccessible(true)&#x65B9;&#x6CD5;&#x53D6;&#x6D88;&#x4E86;supPri&#x5C5E;&#x6027;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x6743;&#x9650;&#xFF08;&#x53EA;&#x662F;&#x53D6;&#x6D88;Field&#x5BF9;&#x8C61;f&#x5BF9;&#x5E94;&#x5C5E;&#x6027;supPri&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x6743;&#x9650;&#xFF0C;&#x5728;Field&#x5BF9;&#x8C61;&#x5185;&#x90E8;&#x8D77;&#x4F5C;&#x7528;&#xFF0C;&#x4ECD;&#x4E0D;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;sup.supPri&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF09;&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x901A;&#x8FC7;set(Object o,Object v)&#x3001;get(Object o)&#xFF0C;&#x4FEE;&#x6539;&#x3001;&#x83B7;&#x53D6;&#x8BE5;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x3002;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.12&#x6240;&#x793A;&#x3002;</p>
+<p>&#x56FE;5.12  &#x901A;&#x8FC7;Field&#x5BF9;&#x8C61;&#x4FEE;&#x6539;&#x79C1;&#x6709;&#x5C5E;&#x6027;</p>
+<h3 id="563--&#x8C03;&#x7528;&#x65B9;&#x6CD5;">5.6.3  &#x8C03;&#x7528;&#x65B9;&#x6CD5;</h3>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x673A;&#x5236;&#xFF0C;&#x8FD0;&#x884C;&#x65F6;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x5C5E;&#x6027;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x6743;&#x9650;&#x53CA;&#x5C5E;&#x6027;&#x503C;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x5C06;&#x4ECB;&#x7ECD;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;Method&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x52A8;&#x6001;&#x6267;&#x884C;Class&#x5BF9;&#x5E94;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x524D;&#x9762;&#x4ECB;&#x7ECD;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x5047;&#x8BBE;&#x73B0;&#x5728;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x6839;&#x636E;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#x79F0;&#x3001;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x3001;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4F8B;&#x5982;TestInvokeMethod&#x7C7B;&#x4E2D;&#x6709;&#x56DB;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;public int add(int x, int y)&#x3001;public int add(int x)&#x3001;public int multiply(int x, int y)&#x3001;public int multiply(int x)&#xFF0C;&#x5206;&#x522B;&#x5B9E;&#x73B0;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6C42;&#x548C;&#x3001;&#x52A0;&#x4E00;&#x3001;&#x6C42;&#x4E58;&#x79EF;&#x3001;&#x6C42;&#x5E73;&#x65B9;&#x56DB;&#x4E2A;&#x529F;&#x80FD;&#x3002;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8F93;&#x5165;&#x65B9;&#x6CD5;&#x548C;&#x5B9E;&#x53C2;&#x5217;&#x8868;&#xFF0C;&#x7A0B;&#x5E8F;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;&#x7ED3;&#x679C;&#x53CD;&#x9988;&#x7ED9;&#x7528;&#x6237;&#x3002;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF08;&#x56E0;&#x4E3A;&#x7BC7;&#x5E45;&#x539F;&#x56E0;&#xFF0C;&#x7A0B;&#x5E8F;&#x4E2D;&#x76F4;&#x63A5;&#x7ED9;&#x51FA;&#x4E86;&#x65B9;&#x6CD5;&#x548C;&#x5B9E;&#x53C2;&#x5217;&#x8868;&#xFF0C;&#x6CA1;&#x6709;&#x8981;&#x6C42;&#x7528;&#x6237;&#x8F93;&#x5165;&#xFF09;&#xFF1A;</p>
+<pre><code>import java.lang.reflect.*;
+
+public class TestInvokeMethod{              
+
+public int add(int x, int y) {
+
+return x + y;
+
+}                
+
+public int add(int x) {
+
+return x + 1;
+
+}
+
+public int multiply(int x, int y) {
+
+return x * y;
+
+}                
+
+public int multiply(int x) {
+
+return x * x;
+
+}
+
+public static void main(String args[]) {
+
+try {
+
+Class c = TestInvokeMethod.class;
+
+Object obj = c.newInstance();
+
+//&#x901A;&#x8FC7;&#x65B9;&#x6CD5;&#x540D;&#x3001;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x5217;&#x8868;&#xFF0C;&#x83B7;&#x5F97;Method&#x5BF9;&#x8C61;
+
+Method m = c.getDeclaredMethod(&quot;multiply&quot;,new Class[]{int.class, int.class});
+
+//invoke(Object o,Object[] args)&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x5BF9;&#x8C61;o&#x5BF9;&#x5E94;&#x65B9;&#x6CD5;
+
+System.out.println(&quot;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;multiply&#xFF0C;&#x8F93;&#x5165;&#x503C;&#x4E3A;int&#x578B;3&#x548C;4&#xFF0C;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;&quot;
+
+\+ m.invoke(obj,new Object[]{3,4}));
+
+Method m2 = c.getDeclaredMethod(&quot;add&quot;,new Class[]{int.class});
+
+System.out.println(&quot;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;add&#xFF0C;&#x8F93;&#x5165;&#x503C;&#x4E3A;int&#x578B;18&#xFF0C;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;&quot;
+
+\+ m2.invoke(obj,new Object[]{18}));
+
+} catch (Exception e) {
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x5F97;&#x65B9;&#x6CD5;&#x540D;multiply&#x4EE5;&#x53CA;&#x5B9E;&#x53C2;&#x5217;&#x8868;3&#x548C;4&#xFF0C;&#x901A;&#x8FC7;getDeclaredMethod (&quot;multiply&quot;,new Class[]{int.class, int.class})&#x65B9;&#x6CD5;&#x83B7;&#x5F97;Method&#x5BF9;&#x8C61;m&#xFF0C;&#x518D;&#x901A;&#x8FC7;m.invoke(obj, newObject[]{3,4})&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x5BF9;&#x8C61;obj&#xFF08;&#x53EF;&#x80FD;&#x4E5F;&#x662F;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x7684;&#xFF09;&#x5BF9;&#x5E94;&#x65B9;&#x6CD5;public int multiply(int x, int y)&#x53D6;&#x5F97;&#x9700;&#x8981;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x7A0B;&#x5E8F;&#x5982;&#x679C;&#x83B7;&#x5F97;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#x4E3A;add&#xFF0C;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E3A;18&#xFF0C;&#x5219;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x52A8;&#x6001;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x4F1A;&#x6267;&#x884C;&#x5BF9;&#x8C61;&#x7684;public int add(int x)&#x65B9;&#x6CD5;&#x3002;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.13&#x6240;&#x793A;&#x3002;</p>
+<p>&#x56FE;5.13  &#x901A;&#x8FC7;Method&#x5BF9;&#x8C61;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x65B9;&#x6CD5;</p>
+<p>&#x2003;&#x2003;&#x81F3;&#x6B64;&#xFF0C;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x6838;&#x5FC3;&#x5185;&#x5BB9;&#x5DF2;&#x4ECB;&#x7ECD;&#x5B8C;&#x6BD5;&#x3002;&#x5176;&#x4E2D;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#xFF0C;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x662F;Java&#x53CD;&#x5C04;&#x673A;&#x5236;&#x7684;&#x7CBE;&#x9AD3;&#xFF0C;&#x5B66;&#x4E60;&#x5B83;&#x5BF9;&#x540E;&#x671F;&#x6846;&#x67B6;&#x8BFE;&#x7A0B;&#x7684;&#x6DF1;&#x5165;&#x7406;&#x89E3;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#x3002;</p>
+<h2 id="57--&#x4E0A;&#x673A;&#x4EFB;&#x52A1;">5.7  &#x4E0A;&#x673A;&#x4EFB;&#x52A1;</h2>
+<h4 id="&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;56&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;">&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;5.6&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;</h4>
+<p>&#x65F6;&#x95F4;&#xFF1A;40&#x5206;&#x949F;&#x3002;</p>
+<p>&#x5F62;&#x5F0F;&#xFF1A;&#x6BCF;&#x4E2A;&#x5B66;&#x5458;&#x72EC;&#x7ACB;&#x5B8C;&#x6210;&#xFF0C;&#x5C0F;&#x7EC4;&#x7EC4;&#x957F;&#x68C0;&#x67E5;&#x3002;</p>
+<p>&#x5DE5;&#x5177;&#xFF1A;EditPlus&#x3002;</p>
+<h2 id="58--&#x64CD;&#x4F5C;&#x52A8;&#x6001;&#x6570;&#x7EC4;">5.8  &#x64CD;&#x4F5C;&#x52A8;&#x6001;&#x6570;&#x7EC4;</h2>
+<p>&#x2003;&#x2003;Java&#x5728;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x6570;&#x7EC4;&#x957F;&#x5EA6;&#xFF0C;&#x4E14;&#x6570;&#x7EC4;&#x957F;&#x5EA6;&#x4E0D;&#x53EF;&#x53D8;&#x3002;&#x800C;java.lang.reflect&#x5305;&#x4E0B;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;Array&#x7C7B;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x4E2D;&#x5305;&#x62EC;&#x4E00;&#x7CFB;&#x5217;static&#x65B9;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x52A8;&#x6001;&#x6570;&#x7EC4;&#xFF0C;&#x5BF9;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x8D4B;&#x503C;&#x3001;&#x53D6;&#x503C;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x2003;&#x2003;Array&#x7C7B;&#x63D0;&#x4F9B;&#x7684;&#x4E3B;&#x8981;&#x65B9;&#x6CD5;&#xFF08;&#x5747;&#x4E3A;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF09;&#x5982;&#x4E0B;&#x3002;</p>
+<ul>
+<li>Object newInstance(Class componentType, int length)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x548C;&#x957F;&#x5EA6;&#x7684;&#x65B0;&#x6570;&#x7EC4;&#x3002;  </p>
+<ul>
+<li>Object newInstance(Class componentType, int... dimensions)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x548C;&#x7EF4;&#x5EA6;&#x7684;&#x591A;&#x7EF4;&#x6570;&#x7EC4;&#x3002;  </p>
+<ul>
+<li>void setXxx(Object array, int index,xxx val)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x5C06;&#x6307;&#x5B9A;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x4E2D;&#x7D22;&#x5F15;&#x5143;&#x7D20;&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;&#x6307;&#x5B9A;&#x7684;xxx&#x7C7B;&#x578B;&#x7684;val&#x503C;&#x3002;  </p>
+<ul>
+<li>xxx getXxx(Object array, int index)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x4E2D;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x5143;&#x7D20;&#x7684;xxx&#x7C7B;&#x578B;&#x7684;&#x503C;&#x3002;  </p>
+<h3 id="581--&#x64CD;&#x4F5C;&#x4E00;&#x7EF4;&#x52A8;&#x6001;&#x6570;&#x7EC4;">5.8.1  &#x64CD;&#x4F5C;&#x4E00;&#x7EF4;&#x52A8;&#x6001;&#x6570;&#x7EC4;</h3>
+<p>&#x2003;&#x2003;&#x5047;&#x8BBE;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x6BCF;&#x4E2A;&#x73ED;&#x9700;&#x8981;&#x7528;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#x6765;&#x5B58;&#x8BE5;&#x73ED;&#x6240;&#x6709;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#xFF0C;&#x4F46;&#x6BCF;&#x4E2A;&#x73ED;&#x7684;&#x5B66;&#x751F;&#x4EBA;&#x6570;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x9700;&#x8981;&#x6BCF;&#x4E2A;&#x73ED;&#x7684;&#x73ED;&#x4E3B;&#x4EFB;&#x5728;&#x5F00;&#x5B66;&#x524D;&#x7EDF;&#x8BA1;&#x8BE5;&#x73ED;&#x73ED;&#x7EA7;&#x4EBA;&#x6570;&#x540E;&#x586B;&#x5165;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x624D;&#x80FD;&#x786E;&#x5B9A;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x52A8;&#x6001;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x5B66;&#x53F7;&#x8F93;&#x5165;&#x5B66;&#x751F;&#x59D3;&#x540D;&#xFF0C;&#x6DFB;&#x5165;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>import java.util.Scanner;
+
+import java.lang.reflect.*;
+
+public class TestArray{
+
+public static void main(String args[]) {
+
+try {
+
+Scanner input = new Scanner(System.in);
+
+Class c = Class.forName(&quot;java.lang.String&quot;);
+
+System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x73ED;&#x7EA7;&#x4EBA;&#x6570;&#xFF1A;&quot;);
+
+int stuNum = input.nextInt();
+
+//&#x521B;&#x5EFA;&#x957F;&#x5EA6;&#x4E3A;stuNum&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;              
+
+Object arr = Array.newInstance(c,stuNum);     
+
+System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x9700;&#x8981;&#x7ED9;&#x5B66;&#x53F7;&#x4E3A;&#xFF1F;&#x7684;&#x5B66;&#x751F;&#x8F93;&#x5165;&#x59D3;&#x540D;&#xFF1A;&quot;);
+
+int stuNo = input.nextInt();    
+
+System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x8BE5;&#x5B66;&#x751F;&#x59D3;&#x540D;&#xFF1A;&quot;);
+
+String stuName = input.next();
+
+//&#x4F7F;&#x7528;Array&#x7C7B;&#x7684;set&#x65B9;&#x6CD5;&#x7ED9;&#x6570;&#x7EC4;&#x8D4B;&#x503C;
+
+Array.set(arr, (stuNo-1), stuName);
+
+//&#x4F7F;&#x7528;Array&#x7C7B;get&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x503C;
+
+System.out.println(&quot;&#x5B66;&#x53F7;&#x4E3A;&quot; + stuNo + &quot;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;&#x4E3A;&#xFF1A;&quot; + Array.get(arr,(stuNo-1)));
+
+} catch (Exception e) {
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;5.14&#x6240;&#x793A;&#x3002;</p>
+<p>&#x56FE;5.14  &#x4F7F;&#x7528;Array&#x7C7B;&#x521B;&#x5EFA;&#x52A8;&#x6001;&#x6570;&#x7EC4;</p>
+<h3 id="582--&#x64CD;&#x4F5C;&#x591A;&#x7EF4;&#x52A8;&#x6001;&#x6570;&#x7EC4;">5.8.2  &#x64CD;&#x4F5C;&#x591A;&#x7EF4;&#x52A8;&#x6001;&#x6570;&#x7EC4;</h3>
+<p>&#x2003;&#x2003;&#x4F7F;&#x7528;Array&#x7C7B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x591A;&#x7EF4;&#x52A8;&#x6001;&#x6570;&#x7EC4;&#x7684;&#x65B9;&#x6CD5;&#x4E3A;newInstance(Class componentType, int... dimensions)&#xFF0C;&#x5176;&#x4E2D;dimensions&#x53C2;&#x6570;&#x662F;&#x8868;&#x793A;&#x65B0;&#x5EFA;&#x6570;&#x7EC4;&#x7EF4;&#x5EA6;&#x7684;int&#x6570;&#x7EC4;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x60F3;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E09;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x7EF4;&#x5EA6;&#x5206;&#x522B;&#x4E3A;8&#x3001;10&#x3001;12&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A;3&#x7684;&#x6574;&#x578B;&#x6570;&#x7EC4;&#xFF08;int[] d = {8,10,12}&#xFF09;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6574;&#x578B;&#x6570;&#x7EC4;&#x521B;&#x5EFA;&#x4E09;&#x7EF4;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;8&#xD7;10&#x4E8C;&#x7EF4;&#x6574;&#x578B;&#x52A8;&#x6001;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x7ED9;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x4E3A;[4][6]&#x7684;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x8D4B;&#x503C;&#x4E3A;20&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>import java.lang.reflect.*;
+
+public class TestArray2{
+
+public static void main(String args[]) {
+
+try {
+
+Class c = Integer.TYPE;
+
+//&#x521B;&#x5EFA;&#x4E00;&#x4E2A;8&#xD7;10&#x4E8C;&#x7EF4;&#x6574;&#x578B;&#x6570;&#x7EC4;
+
+int dim[] = {8,10};
+
+Object arr = Array.newInstance(c,dim);
+
+//arr4&#x4E3A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;
+
+Object arr4 = Array.get(arr,4);
+
+//&#x7ED9;arr[4][6]&#x8D4B;&#x503C;&#x4E3A;20
+
+Array.set(arr4, 6, 20);
+
+//&#x83B7;&#x53D6;arr[4][6]&#x7684;&#x503C;
+
+System.out.println(&quot;arr[4][6]&#x7684;&#x503C;&#x4E3A;&#xFF1A;&quot; + Array.get(arr4,6));
+
+} catch (Exception e) {
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x5728;&#x4ECB;&#x7ECD;&#x6570;&#x7EC4;&#x7684;&#x65F6;&#x5019;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x53EF;&#x4EE5;&#x5148;&#x7406;&#x89E3;&#x4E3A;&#x4E00;&#x4E2A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E00;&#x7EF4;&#x7684;&#x6BCF;&#x4E2A;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x53C8;&#x662F;&#x4E00;&#x4E2A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x3002;&#x4EE3;&#x7801;&#x4E2D;Array.get(arr,4)&#x8BED;&#x53E5;&#x83B7;&#x53D6;&#x4E0B;&#x6807;&#x4E3A;4&#x7684;&#x6570;&#x7EC4;&#x5143;&#x7D20;arr4&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x518D;&#x901A;&#x8FC7;Array.set(arr4, 6, 20)&#x8BED;&#x53E5;&#x8BBE;&#x7F6E;arr4&#x8FD9;&#x4E2A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x4E3A;6&#x7684;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x503C;&#x4E3A;20&#xFF0C;&#x5373;&#x5B8C;&#x6210;&#x4E86;&#x8BBE;&#x7F6E;arr[4][6]&#x7684;&#x503C;&#x4E3A;20&#x7684;&#x76EE;&#x7684;&#x3002;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;20&#x3002;</p>
+<h2 id="59--&#x4E0A;&#x673A;&#x4EFB;&#x52A1;">5.9  &#x4E0A;&#x673A;&#x4EFB;&#x52A1;</h2>
+<h4 id="&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;58&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;">&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;5.8&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x3002;</h4>
+<p>&#x65F6;&#x95F4;&#xFF1A;30&#x5206;&#x949F;&#x3002;</p>
+<p>&#x5F62;&#x5F0F;&#xFF1A;&#x6BCF;&#x4E2A;&#x5B66;&#x5458;&#x72EC;&#x7ACB;&#x5B8C;&#x6210;&#xFF0C;&#x5C0F;&#x7EC4;&#x7EC4;&#x957F;&#x68C0;&#x67E5;&#x3002;</p>
+<p>&#x5DE5;&#x5177;&#xFF1A;EditPlus&#x3002;</p>
+<h2 id="510--&#x672C;&#x7AE0;&#x7EC3;&#x4E60;">5.10  &#x672C;&#x7AE0;&#x7EC3;&#x4E60;</h2>
+<p>1  &#x4E0B;&#x5217;&#x5173;&#x4E8E;Class&#x7C7B;getDeclaredFields()&#x548C;getFields()&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x533A;&#x522B;&#xFF0C;&#x63CF;&#x8FF0;&#x9519;&#x8BEF;&#x7684;&#x662F;&#xFF08;    &#xFF09;&#x3002;&#xFF08;&#x9009;&#x62E9;&#x4E00;&#x9879;&#xFF09; </p>
+<p>&#x2003;&#x2003;A&#xFF0E;getDeclaredFields()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;Field &#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#xFF08;&#x4E0D;&#x542B;&#x7EE7;&#x627F;&#x7684;&#x5C5E;&#x6027;&#xFF09;</p>
+<p>&#x2003;&#x2003;B&#xFF0E;getFields()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;Field&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x53EF;&#x8BBF;&#x95EE;&#x516C;&#x5171;&#x5C5E;&#x6027;&#xFF08;&#x542B;&#x7EE7;&#x627F;&#x7684;&#x516C;&#x5171;&#x5C5E;&#x6027;&#xFF09;</p>
+<p>&#x2003;&#x2003;C&#xFF0E;getFields()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;Field&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x6240;&#x6709;&#x53EF;&#x8BBF;&#x95EE;&#x516C;&#x5171;&#x5C5E;&#x6027;&#xFF08;&#x542B;&#x7EE7;&#x627F;&#x7684;&#x516C;&#x5171;&#x5C5E;&#x6027;&#xFF0C;&#x4E0D;&#x542B;&#x8BE5;&#x7C7B;&#x79C1;&#x6709;&#x7684;&#x5C5E;&#x6027;&#xFF09;</p>
+<p>&#x2003;&#x2003;D&#xFF0E;getDeclaredFields()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B; Field &#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x653E;&#x8BE5;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x5C5E;&#x6027;&#xFF08;&#x4E0D;&#x542B;&#x8BE5;&#x7C7B;&#x79C1;&#x6709;&#x7684;&#x5C5E;&#x6027;&#xFF09;</p>
+<p>2  &#x8BF7;&#x63CF;&#x8FF0;&#x4EC0;&#x4E48;&#x662F;Java&#x53CD;&#x5C04;&#x673A;&#x5236;&#x3002;</p>
+<p>3  &#x8BF7;&#x4ECB;&#x7ECD;&#x83B7;&#x53D6;Class&#x7C7B;&#x6709;&#x54EA;&#x51E0;&#x79CD;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>4  &#x8BF7;&#x63CF;&#x8FF0;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x6709;&#x54EA;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>5  &#x8BF7;&#x7B80;&#x8981;&#x4ECB;&#x7ECD;Java&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x52A8;&#x6001;&#x6570;&#x7EC4;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="d4z.html" class="navigation navigation-prev " aria-label="Previous page: 第四章    方法与数组">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="d6z.html" class="navigation navigation-next " aria-label="Next page: 第六章    类和对象">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第五章    String字符串","level":"1.6","depth":1,"next":{"title":"第六章    类和对象","level":"1.7","depth":1,"path":"d6z.md","ref":"d6z.md","articles":[]},"previous":{"title":"第四章    方法与数组","level":"1.5","depth":1,"path":"d4z.md","ref":"d4z.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"d5z.md","mtime":"2020-04-12T14:38:16.960Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-12T14:37:51.739Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
