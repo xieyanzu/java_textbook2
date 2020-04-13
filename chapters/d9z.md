@@ -87,16 +87,14 @@ assertEquals(expResult,result);
 
 
 
-<p align="center"><img src="./img/d9z/tu9.1.png" /></p>  
+<p align="center"><img src="../img/d9z/tu9.1.png" /></p>  
 <p align="center">图9.1  JUnit3测试“加”类显示结果一</p>  
-
 &emsp;&emsp;假设针对该“加”类有这样的测试用例，输入数据仍然为3和5，预期结果为15，再次编译、运行程序，单元测试运行结果如图9.2所示。
 
 
 
-<p align="center"><img src="./img/d9z/tu9.2.png" /></p>  
+<p align="center"><img src="../img/d9z/tu9.2.png" /></p>  
 <p align="center">图9.2  JUnit3测试“加”类显示结果二</p>  
-
 
 &emsp;&emsp;从运行结果可以看出，JUnit3单元测试框架发现，针对AddOperation类的add()方法进行单元测试，实际运行结果3+5=8和预期结果15不一致，所以提示出现了一个失败，并且明确指出了失败的原因。
 
@@ -156,18 +154,16 @@ assertEquals(expResult,result);
 
 
 
-<p align="center"><img src="./img/d9z/tu9.3.png" /></p>  
+<p align="center"><img src="../img/d9z/tu9.3.png" /></p>  
 <p align="center">图9.3  JUnit4测试“加”类显示结果一</p>  
-
 
 &emsp;&emsp;同样的，把预期结果从8改成15，再次编译、运行，其运行结果如图9.4所示。从运行结果来看，和JUnit3相比，还是有一些不同的。
 
 
 
 
-<p align="center"><img src="./img/d9z/tu9.4.png" /></p>  
+<p align="center"><img src="../img/d9z/tu9.4.png" /></p>  
 <p align="center">图9.4  JUnit4测试“加”类显示结果二</p>  
-
 
 
 
@@ -431,9 +427,8 @@ public static void assertEquals(Object[] expected,Object[] actuals);
  
 
 
-<p align="center"><img src="./img/d9z/tu9.5.png" /></p>  
+<p align="center"><img src="../img/d9z/tu9.5.png" /></p>  
 <p align="center">图9.5  JUnit4测试“计算器”类</p>  
-
 
 ### 9.3.2  JUnit4知识拓展  
 
@@ -477,16 +472,14 @@ assertEquals(2, result);
 
 
 
-<p align="center"><img src="./img/d9z/tu9.6.png" /></p>  
+<p align="center"><img src="../img/d9z/tu9.6.png" /></p>  
 <p align="center">图9.6  JUnit4测试死循环方法</p>  
-
 &emsp;&emsp;如何解决这个问题呢？尤其是对于那些逻辑很复杂，循环嵌套比较深的程序，很有可能出现死循环，因此一定要采取一些预防措施，JUnit4中的限时测试是一个很好的解决方案。如果给这些测试方法设定一个执行时间，并超过了这个时间，它们就会被系统强行终止，并且系统还会汇报该方法结束的原因是因为超时，这样就可以发现这些Bug了。要实现这一功能，只需要给@Test注解加一个参数即可，例如@Test(timeout = 1000)，timeout参数表示设定的时间，单位为毫秒。编译、运行程序，运行结果如图9.7所示，JUnit4会再报告一个失败，失败的原因是超过了这个时间未获得预期结果。
 
 
 
-<p align="center"><img src="./img/d9z/tu9.7.png" /></p>  
+<p align="center"><img src="../img/d9z/tu9.7.png" /></p>  
 <p align="center">图9.7 JUnit4限时测试</p>  
-
 
 - 参数化测试
 
@@ -600,9 +593,8 @@ assertEquals(result, calc.getResult());
 
 
 
-<p align="center"><img src="./img/d9z/tu9.8.png" /></p>  
+<p align="center"><img src="../img/d9z/tu9.8.png" /></p>  
 <p align="center">图9.8  JUnit4参数化测试</p>  
-
 
 &emsp;&emsp;关于JUnit4的测试运行机，这里做简要的补充说明。
 

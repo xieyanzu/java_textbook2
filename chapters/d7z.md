@@ -63,9 +63,8 @@
 
 
 
-<p align="center"><img src="./img/d7z/tu7.1.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.1.png" /></p>  
 <p align="center">图7.1  TCP/IP协议模型与OSI参考模型</p>  
-
 
 
 
@@ -166,9 +165,8 @@
 
 
 
-<p align="center"><img src="./img/d7z/tu7.2.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.2.png" /></p>  
 <p align="center">图7.2  TCP/IP协议数据封装和解封</p>  
-
 
 
 
@@ -274,9 +272,8 @@
 
 
 
-<p align="center"><img src="./img/d7z/tu7.3.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.3.png" /></p>  
 <p align="center">图7.3  配置和查看IP地址等相关信息</p>  
-
 
 
 
@@ -447,9 +444,8 @@ System.out.println("域名：" + dName + " 对应的IP地址为：" + sohuIP.get
 
 
 
-<p align="center"><img src="./img/d7z/tu7.4.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.4.png" /></p>  
 <p align="center">图7.4  获取指定域名的IP地址</p>  
-
 
 
 &emsp;&emsp;上面的两个例子中，创建的InetAddress类对象都不是使用构造方法new出这个对象，而是通过InetAddress类的静态方法获取的。下面列出了通过InetAddress类的静态方法获取InetAddress类对象的方法。
@@ -512,15 +508,14 @@ System.out.println("域名：" + dName + " 对应的IP地址为：" + sohuIP.get
 &emsp;&emsp;URL 后面可能还跟有一个片段，也称为引用。该片段由井字符“#”指示，后面跟有更多的字符。例如http://java.sun.com/index.html#chapter1。使用此片段的目的在于表明，在获取到指定的资源后，应用程序需要使用文档中附加有chapter1标记的部分。 
 
 
-<p align="center"><img src="./img/d7z/tu7.5.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.5.png" /></p>  
 <p align="center">图7.5  网络上指定资源页面</p>  
-
 
 
 
 &emsp;&emsp;下面通过一个案例来演示如何获取网络上指定资源（http://127.0.0.1:8080/examples/index.html）的信息。这个页面的具体内容如图7.5所示，其HTML代码如下：
 
- 
+
 ```
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
@@ -552,13 +547,13 @@ System.out.println("域名：" + dName + " 对应的IP地址为：" + sohuIP.get
 
 </HTML>
 ```
- 
+
 
 &emsp;&emsp;这个案例的具体需求为先输入要定位的URL地址，然后再输入要显示哪个页面标签元素的内容，程序显示该标签的具体内容，具体代码如下。
 
  
 
- 
+
 ```
 import java.util.Scanner;
 
@@ -624,9 +619,8 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d7z/tu7.6.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.6.png" /></p>  
 <p align="center">图7.6  URL类使用</p>  
-
 
 
 
@@ -660,7 +654,7 @@ e.printStackTrace();
 
 &emsp;&emsp;下面通过一个案例，简要说明URLConnection类的使用。URLConnection类里涉及的一些知识现在还没有涉及，在阅读下面的代码时如果有不明白的地方，通过后面课程的学习会逐步理解。
 
- 
+
 ```
 import java.net.*;
 
@@ -778,9 +772,8 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d7z/tu7.7.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.7.png" /></p>  
 <p align="center">图7.7  基于TCP的Socket编程</p>  
-
 
 
 
@@ -790,7 +783,7 @@ e.printStackTrace();
 
 &emsp;&emsp;首先来看服务器端程序，具体代码如下：
 
- 
+
 ```
 import java.net.*;
 
@@ -838,13 +831,13 @@ System.out.println("程序运行出错！");
 
 }
 ```
- 
+
 
 &emsp;&emsp;该服务器端程序的作用就是监听8888端口，当有发送到本机8888端口的Socket请求时，建立输出流，将通过accept()方法创建的Socket对象的IP地址和端口号输出到客户端。编译、运行程序，使服务器启动并处于监听状态。
 
 &emsp;&emsp;下面编写客户端程序，具体代码如下：
 
- 
+
 ```
 import java.net.*;
 
@@ -888,21 +881,20 @@ e.printStackTrace();
 
 }
 ```
- 
+
 
 &emsp;&emsp;该客户端程序通过IP地址127.0.0.1和端口号8888，创建一个客户端Socket对象，建立输入数据流，通过输入数据流读取指定IP地址和端口号上服务器端程序的输出，并在控制台将服务器的输出显示出来。编译、运行程序，运行结果如图7.8所示。
 
 
 
-<p align="center"><img src="./img/d7z/tu7.8.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.8.png" /></p>  
 <p align="center">图7.8  使用Java Socket编程</p>  
-
 
 
 
 &emsp;&emsp;在这个通过Java Socket编程实现的客户端、服务器端程序中，客户端没有请求的具体内容，只要有请求，服务器就将指定的内容发送给客户端，客户端将接收的内容显示出来。接下来对上面的案例进行调整，服务器端可以接收客户端请求的内容，并显示在服务器端控制台上。服务器端程序具体代码如下：
 
- 
+
 ```
 import java.io.*; 
 
@@ -960,11 +952,11 @@ e.printStackTrace();
 
 }
 ```
- 
+
 
 &emsp;&emsp;客户端具体代码如下：
 
- 
+
 ```
 import java.net.*;
 
@@ -1020,23 +1012,21 @@ e.printStackTrace();
 
 }
 
-``` 
+```
 
 &emsp;&emsp;编译、运行服务器端、客户端程序，运行结果分别如图7.9和图7.10所示。
 
 
 
-<p align="center"><img src="./img/d7z/tu7.9.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.9.png" /></p>  
 <p align="center">图7.9  Socket编程服务器端</p>  
 
 
 
 
 
-
-<p align="center"><img src="./img/d7z/tu7.10.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.10.png" /></p>  
 <p align="center">图7.10  Socket编程客户端</p>  
-
 
 
 
@@ -1052,9 +1042,8 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d7z/tu7.11.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.11.png" /></p>  
 <p align="center">图7.11  基于UDP的Socket编程</p>  
-
 
 
 
@@ -1066,7 +1055,7 @@ e.printStackTrace();
 
 &emsp;&emsp;接下来通过一个案例来演示Java如何实现基于UDP的Socket编程，其中服务器端代码如下：
 
- 
+
 ```
 import java.net.*;
 
@@ -1114,7 +1103,7 @@ System.out.println(dis.readLong());
 
 客户端代码如下：
 
- 
+
 ```
 import java.net.*;
 
@@ -1162,23 +1151,21 @@ ds.close();
 
 }
 ```
- 
+
 
 &emsp;&emsp;编译、运行程序，运行结果如图7.12和图7.13所示。
 
 
 
-<p align="center"><img src="./img/d7z/tu7.12.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.12.png" /></p>  
 <p align="center">图7.12  UDP Socket编程服务器端</p>  
 
 
 
 
 
-
-<p align="center"><img src="./img/d7z/tu7.13.png" /></p>  
+<p align="center"><img src="../img/d7z/tu7.13.png" /></p>  
 <p align="center">图7.13  UDP Socket编程客户端</p>  
-
 
 
 
@@ -1238,7 +1225,7 @@ ds.close();
 
  
 
- 
+
 5  基于TCP的Socket编程，在客户端和服务器端要创建什么对象，需要哪些参数。
 
  

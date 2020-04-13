@@ -21,9 +21,8 @@
 
 
 
-<p align="center"><img src="./img/d6z/tu6.1.png" /></p>  
+<p align="center"><img src="../img/d6z/tu6.1.png" /></p>  
 <p align="center">图6.1  多线程进程示意图</p>  
-
 
 
 
@@ -85,9 +84,8 @@
 
 
 
-<p align="center"><img src="./img/d6z/tu6.2.png" /></p>  
+<p align="center"><img src="../img/d6z/tu6.2.png" /></p>  
 <p align="center">图6.2  线程状态转换图</p>  
-
 
 
 
@@ -127,7 +125,7 @@
 
 &emsp;&emsp;如果线程类直接继承Thread类，其代码结构大致如下：
 
- 
+
 ```
 class 类名 extends Thread{
 
@@ -143,13 +141,13 @@ class 类名 extends Thread{
 
 }
 ```
- 
+
 
 &emsp;&emsp;从线程类的代码结构可以看出，一个线程的核心代码需要写在run()方法里。也就是说，当线程从就绪状态，通过调度程序分配CPU资源，进入运行状态后，执行的代码即run()方法里面的代码。
 
 &emsp;&emsp;如果线程类是实现Runnable接口的，其代码结构大致如下：
 
- 
+
 ```
 class 类名 implements Runnable{
 
@@ -165,11 +163,11 @@ class 类名 implements Runnable{
 
 }
 ```
- 
+
 
 &emsp;&emsp;和继承Thread类非常类似，实现Runnable接口的线程类也需要编写run()方法，将线程的核心代码置于该方法中。但是 Runnable 接口并没有任何对线程的支持，因此还必须创建 Thread 类的实例，通过Thread 类的构造函数来创建线程类。
 
- 
+
 ```
 类名 对象名 = new 类名();
 
@@ -181,7 +179,7 @@ Thread 线程对象名 = new Thread(对象名);
 
 &emsp;&emsp;下面的例子，分别使用继承Thread类和实现Runnable接口两种方式创建了两个线程类，并通过调用start()方法启动线程。具体程序代码如下：
 
- 
+
 ```
 public class TestThread {
 
@@ -257,15 +255,14 @@ System.out.println(this.name);
 
 }
 ```
- 
+
 
 &emsp;&emsp;编译、运行程序，运行结果如图6.3所示。因为程序中的注释已对程序进行了详细的描述，这里不再展开解释。
 
 
 
-<p align="center"><img src="./img/d6z/tu6.3.png" /></p>  
+<p align="center"><img src="../img/d6z/tu6.3.png" /></p>  
 <p align="center">图6.3  多线程程序</p>  
-
 
 
 
@@ -314,9 +311,8 @@ System.out.println(this.name);
 
 
 
-<p align="center"><img src="./img/d6z/tu6.4.png" /></p>  
+<p align="center"><img src="../img/d6z/tu6.4.png" /></p>  
 <p align="center">图6.4  多线程程序</p>  
-
 
 
 
@@ -362,7 +358,7 @@ System.out.println(this.name);
 
 &emsp;&emsp;有这样一个程序，程序内部有一个计数功能，每间隔2秒输出1、2、3……一直到100结束。现在有这样的需求，当用户想终止这个计数功能时，只要在控制台输入s即可，具体程序代码如下：
 
- 
+
 ```
 import java.util.Scanner;
 
@@ -440,7 +436,7 @@ e.printStackTrace();
 
 }
 ```
- 
+
 
 &emsp;&emsp;程序中，CountThread线程类实现了计数功能。当主程序调用t.start()方法启动线程时，执行CountThread线程类里run()方法的输出计数功能。主程序中通过while循环，在控制台获取用户输入，当用户输入为s时，调用CountThread线程类的stopIt()方法，改变run()方法中运行的条件，即可终止该线程的执行。
 
@@ -448,9 +444,8 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d6z/tu6.5.png" /></p>  
+<p align="center"><img src="../img/d6z/tu6.5.png" /></p>  
 <p align="center">图6.5  终止线程</p>  
-
 
 
 
@@ -458,7 +453,7 @@ e.printStackTrace();
 
 &emsp;&emsp;Thread类的静态方法sleep()，可以让当前线程进入等待（阻塞状态），直到指定的时间流逝，或直到别的线程调用当前线程对象上的interrupt()方法。下面的案例演示了调用线程对象的interrupt()方法，中断线程所处的阻塞状态，使线程恢复进入就绪状态，具体代码如下：
 
- 
+
 ```
 public class InterruptThread{
 
@@ -522,7 +517,7 @@ System.out.println("计数线程运行1次！");
 
 }
 ```
- 
+
 
 &emsp;&emsp;请注意计数线程的变化，计数线程的异常处理代码放在了while循环以内，也就是说如果主程序调用interrupt()方法中断了计数线程的阻塞状态（由sleep(5000)引起的），并处理了由计数线程抛出的InterruptedException异常之后，计数线程将会进入就绪状态和运行状态，执行sleep(5000)之后的程序，继续循环输出。
 
@@ -530,9 +525,8 @@ System.out.println("计数线程运行1次！");
 
 
 
-<p align="center"><img src="./img/d6z/tu6.6.png" /></p>  
+<p align="center"><img src="../img/d6z/tu6.6.png" /></p>  
 <p align="center">图6.6  线程等待和中断等待</p>  
-
 
 
 
@@ -552,7 +546,7 @@ System.out.println("计数线程运行1次！");
 
 &emsp;&emsp;Thread类的join()方法，可以让当前线程等待加入的线程完成，才能继续往下执行。下面通过一个案例来演示join()方法的使用。
 
- 
+
 ```
 public class JoinThread{
 
@@ -646,15 +640,14 @@ e.printStackTrace();
 
 }
 ```
- 
+
 
 &emsp;&emsp;案例中有两个线程类QThread类和SThread类，其中，QThread线程类的run()方法中每隔0.5秒从0到99依次输出数字，SThread线程类的run()方法中每隔1秒从0到99依次输出数字。QThread线程类有一个带参的构造方法，传入一个线程对象。在QThread线程类的run()方法中，当输出数值等于5时，调用构造方法中传入的线程对象的join()方法，让传入的线程对象全部执行完毕以后，再继续执行本线程的代码。程序运行结果如图6.7所示。
 
 
 
-<p align="center"><img src="./img/d6z/tu6.7.png" /></p>  
+<p align="center"><img src="../img/d6z/tu6.7.png" /></p>  
 <p align="center">图6.7  线程join()方法使用</p>  
-
 
 
 
@@ -670,7 +663,7 @@ e.printStackTrace();
 
 &emsp;&emsp;线程的优先级由数字1～10表示，其中1表示优先级最高，默认值为5。尽管JDK给线程优先级设置了10个级别，但仍然建议只使用MAX_PRIORITY（级别为1）、NORM_PRIORITY（级别为5）和MIN_PRIORITY（级别为10）三个常量来设置线程优先级，让程序具有更好的可移植性。接下来看看下面的案例：
 
- 
+
 ```
 public class SetPriority{
 
@@ -726,15 +719,14 @@ System.out.println("SThread正在输出数字：" + i++);
 
 }
 ```
- 
+
 
 &emsp;&emsp;编译、运行程序，运行结果如图6.8所示。
 
 
 
-<p align="center"><img src="./img/d6z/tu6.8.png" /></p>  
+<p align="center"><img src="../img/d6z/tu6.8.png" /></p>  
 <p align="center">图6.8  线程优先级设置</p>  
-
 
 
 &emsp;&emsp;看到这样的运行结果大家就开始疑惑了，明明将SThread线程类对象st的优先级设置成最高，将QThread线程类对象qt的优先级设置成最低，启动两个线程，结果并不是优先级高的一直先执行，优先级低的一直后执行。
@@ -751,7 +743,7 @@ System.out.println("SThread正在输出数字：" + i++);
 
 &emsp;&emsp;接下来看一个简单的案例：
 
- 
+
 ```
 public class DaemonThread{
 
@@ -789,7 +781,7 @@ System.out.println("我是后台线程");
 
 }
 ```
- 
+
 
 &emsp;&emsp;编译、运行程序，程序输出“让一切都结束吧”后立刻退出。从程序运行结果可以看出，虽然程序中创建并启动了一个线程，并且这个线程的run()方法在无条件循环输出。但是因为程序启动的是一个守护进程，所以当程序只有守护线程时，该程序结束运行。
 
@@ -833,7 +825,7 @@ System.out.println("我是后台线程");
 
 &emsp;&emsp;首先来看这样一个案例：
 
- 
+
 ```
 public class ShareData{
 
@@ -895,7 +887,7 @@ data++;
 
 }
 ```
- 
+
 
 &emsp;&emsp;ShareData类中有两个内部类ShareThread1和ShareThread2，这两个内部类都共享并访问ShareData类中静态成员变量data。其中ShareThread1类的run()方法判断当data小于10时进行输出，不过在输出前通过调用sleep()方法等待1秒。而ShareThread2类的run()方法让data循环执行自加的操作，直到data不小于100时停止。
 
@@ -907,7 +899,7 @@ data++;
 
 &emsp;&emsp;上面的案例中，共享数据data被不同的线程存取，出现了数据不一致的情况。针对这种情况，Java提供了同步机制，来解决控制共享数据的问题，Java可以使用synchronized关键字确保数据在各个线程间正确共享。修改上面的案例，注意synchronized关键字的使用。
 
- 
+
 ```
 public class ShareData2{
 
@@ -983,7 +975,7 @@ System.out.println("ShareThread2执行完后data的值为：" + data);
 
 }
 ```
- 
+
 
 &emsp;&emsp;程序中，首先定义了一个静态的成员变量lock，然后在ShareThread1和ShareThread2类的run()方法里，使用synchronized(lock){…}代码对lock对象上锁，其含义为一旦一个线程执行到synchronized(lock){…}代码块，则锁住lock对象，其他针对lock对象上锁的synchronized (lock){…}代码块将不允许被执行，直到之前运行的代码块运行结束，释放lock对象锁后其他代码块才允许执行。
 
@@ -991,9 +983,8 @@ System.out.println("ShareThread2执行完后data的值为：" + data);
 
 
 
-<p align="center"><img src="./img/d6z/tu6.9.png" /></p>  
+<p align="center"><img src="../img/d6z/tu6.9.png" /></p>  
 <p align="center">图6.9  控制共享数据</p>  
-
 
 
 
@@ -1003,7 +994,7 @@ System.out.println("ShareThread2执行完后data的值为：" + data);
 
 &emsp;&emsp;实现多线程同步的方法之一就是同步代码块，其语法形式如下：
 
- 
+
 ```
 synchronized(obj){
 
@@ -1011,13 +1002,13 @@ synchronized(obj){
 
 }
 ```
- 
+
 
 &emsp;&emsp;要想实现线程的同步，则这些线程必须去竞争一个唯一的共享的对象锁。
 
 &emsp;&emsp;先来看一个案例，这个案例的主程序通过一个for循环，创建、启动5个线程对象（传入一个参数作为线程id），而每个线程对象run()方法里，再通过一个for循环输出1～10。
 
- 
+
 ```
 public class TestSyncThread
 
@@ -1069,13 +1060,13 @@ System.out.println("线程ID名为: " + this.tid + "正在输出：" + i);
 
 }
 ```
- 
+
 
 &emsp;&emsp;编译、运行上面的程序，五个线程各自输出。如果希望五个线程之间不出现交叉输出的情况，而是顺序地输出，即一个线程输出完再允许另一个线程输出时，则可通过不同的形式，完成上面的线程同步的要求。
 
 &emsp;&emsp;修改TestSyncThread类，在创建、启动线程之前，先创建一个线程之间竞争使用的对象，然后将这个对象的引用传递给每个线程对象的lock成员变量。这样一来，每个线程的lock成员变量都指向同一个对象，在线程的run()方法中，对lock对象使用synchronzied关键字对同步代码块进行局部封锁，从而实现同步，具体代码如下：
 
- 
+
 ```
 public class TestSyncThread2
 
@@ -1141,15 +1132,14 @@ System.out.println("线程ID名为: " + this.tid + "正在输出：" + i);
 
 }
 ```
- 
+
 
 &emsp;&emsp;编译、运行程序，其运行结果如图6.10所示。
 
 
 
-<p align="center"><img src="./img/d6z/tu6.10.png" /></p>  
+<p align="center"><img src="../img/d6z/tu6.10.png" /></p>  
 <p align="center">图6.10  线程同步</p>  
-
 
 
 
@@ -1157,7 +1147,7 @@ System.out.println("线程ID名为: " + this.tid + "正在输出：" + i);
 
 &emsp;&emsp;通过上面的方式实现线程同步还是比较麻烦的，可以利用类变量被所有类的实例所共享这一特性，在线程类内部定义一个静态共享资源，通过对这个共享资源的竞争起到线程同步的目的。具体代码如下：
 
- 
+
 ```
 public class TestSyncThread3
 
@@ -1217,7 +1207,7 @@ System.out.println("线程ID名为: " + this.tid + "正在输出：" + i);
 
 }
 ```
- 
+
 
 &emsp;&emsp;比较TestSyncThread3和TestSyncThread2的区别，程序运行结果一样，但代码还是简化了不少。
 
@@ -1231,13 +1221,13 @@ System.out.println("线程ID名为: " + this.tid + "正在输出：" + i);
 
 }
 ```
- 
+
 
 &emsp;&emsp;每个类实例都对应一把锁，每个synchronized方法[[张彬4\]](#_msocom_4) 都必须获得调用该方法的类实例的锁方能执行，否则所属线程阻塞。synchronized方法[[张彬5\]](#_msocom_5) 一旦执行，就独占该锁，直到该方法返回时才将锁释放，此后被阻塞的线程方能获得该锁，重新进入就绪状态。这种机制确保了同一时刻对于每个类实例，其所有声明为 synchronized 的方法中至多只有一个处于就绪状态，从而有效避免了类成员变量的访问冲突。
 
 &emsp;&emsp;针对上面的案例，可以在线程类中定义一个静态方法，并在线程run()方法里调用这个静态方法。静态方法是所有类实例对象所共享的，所以所有线程对象在访问此静态方法时是互斥访问的，从而实现线程的同步。具体代码如下：
 
- 
+
 ```
 public class TestSyncThread4
 

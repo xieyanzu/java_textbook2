@@ -129,17 +129,15 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d5z/tu5.1.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.1.png" /></p>  
 <p align="center">图5.1  Object类的所有方法</p>  
 
 
 
 
 
-
-<p align="center"><img src="./img/d5z/tu5.2.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.2.png" /></p>  
 <p align="center">图5.2  Car类的所有方法</p>  
-
 
 
 
@@ -264,9 +262,8 @@ System.out.println("name.getClass().getSuperclass() 类名称:" + c5.getName());
 ```
 
 
-<p align="center"><img src="./img/d5z/tu5.3.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.3.png" /></p>  
 <p align="center">图5.3  获取Class类对象</p>  
-
 
 
 
@@ -426,9 +423,8 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d5z/tu5.4.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.4.png" /></p>  
 <p align="center">图5.4  获取类方法详细信息</p>  
-
 
 
 
@@ -486,9 +482,8 @@ public String supPublic(){return supPub;}
 
 
 
-<p align="center"><img src="./img/d5z/tu5.5.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.5.png" /></p>  
 <p align="center">图5.5  getDeclaredMethods()方法获得的方法</p>  
-
 
 
 
@@ -496,9 +491,8 @@ public String supPublic(){return supPub;}
 
 
 
-<p align="center"><img src="./img/d5z/tu5.6.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.6.png" /></p>  
 <p align="center">图5.6  getMethods()方法获得的方法</p>  
-
 
 
 
@@ -586,17 +580,15 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d5z/tu5.7.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.7.png" /></p>  
 <p align="center">图5.7  getDeclaredFields()方法获得的属性</p>  
 
 
 
 
 
-
-<p align="center"><img src="./img/d5z/tu5.8.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.8.png" /></p>  
 <p align="center">图5.8  getFields()方法获得的属性</p>  
-
 
 
 
@@ -752,16 +744,14 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d5z/tu5.9.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.9.png" /></p>  
 <p align="center">图5.9  getDeclaredConstructors()方法获得的构造方法    </p>  
 
 
-
-<p align="center"><img src="./img/d5z/tu5.10.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.10.png" /></p>  
 <p align="center">图5.10  getConstructors()方法获得的构造方法</p>  
 
-
-        
+​        
 
 
 
@@ -899,9 +889,8 @@ Super sup = new Super();
 
 
 
-<p align="center"><img src="./img/d5z/tu5.11.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.11.png" /></p>  
 <p align="center">图5.11  newInstance()方法产生实例化异常</p>  
-
 
 
 
@@ -1013,9 +1002,8 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d5z/tu5.12.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.12.png" /></p>  
 <p align="center">图5.12  通过Field对象修改私有属性</p>  
-
 
 
 
@@ -1097,9 +1085,8 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d5z/tu5.13.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.13.png" /></p>  
 <p align="center">图5.13  通过Method对象动态调用方法</p>  
-
 
 
 
@@ -1226,9 +1213,8 @@ e.printStackTrace();
 
 
 
-<p align="center"><img src="./img/d5z/tu5.14.png" /></p>  
+<p align="center"><img src="../img/d5z/tu5.14.png" /></p>  
 <p align="center">图5.14  使用Array类创建动态数组</p>  
-
 
 
 

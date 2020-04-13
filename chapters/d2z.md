@@ -62,9 +62,8 @@
 
 
 
-<p align="center"><img src="./img/d2z/tu2.1.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.1.png" /></p>  
 <p align="center">图2.1  线性结构—学生信息表</p>  
-
 
 
 
@@ -83,9 +82,8 @@
 
 
 
-<p align="center"><img src="./img/d2z/tu2.2.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.2.png" /></p>  
 <p align="center">图2.2  树结构—C盘目录结构</p>  
-
 
 
 
@@ -111,14 +109,12 @@
 
 
 
-<p align="center"><img src="./img/d2z/tu2.3.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.3.png" /></p>  
 <p align="center">图2.3  哥尼斯堡七桥问题</p>  
 
 
-
-<p align="center"><img src="./img/d2z/tu2.4.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.4.png" /></p>  
 <p align="center">图2.4  图结构—哥尼斯堡七桥问题</p>  
-
 
 
 
@@ -132,14 +128,13 @@
 
 
 
-<p align="center"><img src="./img/d2z/tu2.5.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.5.png" /></p>  
 <p align="center">图2.5  四种数据逻辑结构示意图</p>  
 
 
 
 
 
- 
 
 ## 2.2  数据存储结构
 
@@ -165,9 +160,8 @@
 
 
 
-<p align="center"><img src="./img/d2z/tu2.6.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.6.png" /></p>  
 <p align="center">图2.6  顺序存储结构示意图</p>  
-
 
 
 
@@ -189,9 +183,8 @@
 
 
 
-<p align="center"><img src="./img/d2z/tu2.7.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.7.png" /></p>  
 <p align="center">图2.7  链式存储结构示意图</p>  
-
 
 
 
@@ -218,9 +211,8 @@
 
 
 
-<p align="center"><img src="./img/d2z/tu2.8.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.8.png" /></p>  
 <p align="center">图2.8  线性表的顺序存储结构</p>  
-
 
 
 
@@ -237,9 +229,8 @@
 
 
 
-<p align="center"><img src="./img/d2z/tu2.9.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.9.png" /></p>  
 <p align="center">图2.9  循环链表</p>  
-
 
 
 
@@ -250,9 +241,8 @@
 
 
 
-<p align="center"><img src="./img/d2z/tu2.10.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.10.png" /></p>  
 <p align="center">图2.10  双向链表</p>  
-
 
 
 
@@ -682,9 +672,8 @@ public class TestSeqStack{
 
 
 
-<p align="center"><img src="./img/d2z/tu2.11.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.11.png" /></p>  
 <p align="center">图2.11  栈结构的使用</p>  
-
 
 
 
@@ -864,9 +853,8 @@ public class SeqSeach{
 
 
 
-<p align="center"><img src="./img/d2z/tu2.12.png" /></p>  
+<p align="center"><img src="../img/d2z/tu2.12.png" /></p>  
 <p align="center">图2.12  无序查找</p>  
-
 
 
 

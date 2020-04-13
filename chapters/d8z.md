@@ -23,7 +23,7 @@
 
 &emsp;&emsp;通过使用注解，程序开发人员可以在不改变程序原有逻辑的情况下，在源代码中加入一些补充信息，代码分析工具、开发工具和部署工具可以通过这些补充信息进行验证和部署。下面的代码展示了注释和注解：
 
- 
+
 ```
 public class TestAnnotation{
 
@@ -39,7 +39,7 @@ String name;
 
 }
 ```
- 
+
 
 &emsp;&emsp;刚才介绍了Java注解的基本概念，现在来看一下Java注解的语法。使用注解时要在其前面加一个“@”符号，表明后面的内容为注解。Java注解有以下三种形式。
 
@@ -63,7 +63,7 @@ String name;
 
 &emsp;&emsp;假设“租车系统”中Vehicle类和Truck类的代码如下，其中Truck类继承自Vehicle类，且重写了Vehicle类的drive()方法（根据需求这个方法必须要重写）。
 
- 
+
 ```
 public class Vehicle 
 
@@ -157,7 +157,7 @@ loss = loss + 10;
 
 }
 
-``` 
+```
 
 &emsp;&emsp;编译、运行Truck类，程序可以按用户需求执行。但是有可能程序员在写Truck类的代码时，误将drive()写成了driver()，然而在执行t1.drive()；语句时，因为drive()方法并未被重写，因此t1.drive()调用的还是Vehicle类的drive()方法。最不幸的是，这种错误程序编译时是不会报错的，即使在运行时如果不跟踪代码也不容易发现这个错误，这样最终会为以后修复这个错误带来很大的困难。
 
@@ -176,9 +176,8 @@ loss = loss + 10;
 
 
 
-<p align="center"><img src="./img/d8z/tu8.1.png" /></p>  
+<p align="center"><img src="../img/d8z/tu8.1.png" /></p>  
 <p align="center">图8.1  @Deprecated注解的使用</p>  
-
 
 
 
@@ -188,7 +187,7 @@ loss = loss + 10;
 
 &emsp;&emsp;这个世界总是这么奇妙，既然有可以使编译器产生警告信息的注解，那么通常也会有抑制编译器产生警告信息的注解，@SuppressWarnings注解就是为了这样一个目的而存在的。让我们先看看下面的代码：
 
- 
+
 ```
 import java.util.*;
 
@@ -216,15 +215,14 @@ vehAL.add(t1);
 
 
 
-<p align="center"><img src="./img/d8z/tu8.2.png" /></p>  
+<p align="center"><img src="../img/d8z/tu8.2.png" /></p>  
 <p align="center">图8.2  编译器警告信息</p>  
-
 
 
 
 &emsp;&emsp;这个警告信息提示List类必须使用泛型才是安全的，才可以进行类型检查，现在未做检查，所以存在不安全因素。如果想取消这些警告信息，具体代码如下：
 
- 
+
 ```
 import java.util.*;
 
@@ -250,7 +248,7 @@ vehAL.add(t1);
 
 }
 ```
- 
+
 
 &emsp;&emsp;再次编译程序，警告被抑制。当然，编译器出现警告，是要提醒程序员有哪些地方需要注意，抑制警告不是目的，正确的解决办法是使用泛型对集合中的元素进行约束，使对集合的操作可以被检查，如代码中被注释的部分那样。
 
@@ -273,7 +271,7 @@ vehAL.add(t1);
 - all：所有情况。
 
 
- 
+
 
 ## 8.3  上机任务
 
@@ -301,7 +299,7 @@ vehAL.add(t1);
  
 
 
- 
+
 
 ## 8.4  自定义注解
 
@@ -313,7 +311,7 @@ vehAL.add(t1);
 
 &emsp;&emsp;注解之所以强大，能被众多框架所使用的主要原因在于，它可以允许程序员自定义注解，使Java程序变成自描述的。注解的语法形式和接口差不多，只是在interface前面多了一个“@”符号。
 
- 
+
 ```
 public @interface MyAnnotation{
 
@@ -321,11 +319,11 @@ public @interface MyAnnotation{
 
 }
 ```
- 
+
 
 &emsp;&emsp;上面的代码是一个最简单的注解，这个注解没有属性。我们可以在自定义注解时定义属性，在注解类型的定义中以无参方法的形式来声明，其方法名和返回值分别定义了该属性的名字和类型，其代码如下：
 
- 
+
 ```
 public @interface MyAnnotation{
 
@@ -335,11 +333,11 @@ String value();
 
 }
 ```
- 
+
 
 &emsp;&emsp;可以按如下格式使用MyAnnotation注解：
 
- 
+
 ```
 public class TestAnnotation{
 
@@ -355,11 +353,11 @@ public void getObjectInfo(){
 
 }
 ```
- 
+
 
 &emsp;&emsp;接下来修改自定义注解MyAnnotation，使其含两个属性，具体代码如下：
 
- 
+
 ```
 public @interface MyAnnotation{
 
@@ -371,11 +369,11 @@ int age();
 
 }
 ```
- 
+
 
 &emsp;&emsp;在注解中可以定义属性，也可以给属性赋默认值，具体代码如下：
 
- 
+
 ```
 public @interface MyAnnotation{
 
@@ -387,11 +385,11 @@ int age() default 22;
 
 }
 ```
- 
+
 
 &emsp;&emsp;定义了注解之后，接下来就可以在程序中使用注解，具体代码如下：
 
- 
+
 ```
 public class TestAnnotation{
 
@@ -407,7 +405,7 @@ public void getObjectInfo(){
 
 }
 ```
- 
+
 
 &emsp;&emsp;请注意注释的描述，使用带属性的注解时，需要给属性赋值。不过如果在定义注解时给属性赋了默认值，则可使用不带属性值的注解，也就是让注解使用自己的默认值。
 
@@ -427,7 +425,7 @@ public void getObjectInfo(){
 
 &emsp;&emsp;接下来看这样一个案例，将之前自定义的注解用@Target进行注解，以限制此注解只能使用在属性上。此时如果将此注解使用在方法上，编译器会报出“注释类型不适用于该类型的声明”的错误。案例具体代码如下：
 
- 
+
 ```
 import java.lang.annotation.*;
 
@@ -455,7 +453,7 @@ public void getObjectInfo(){
 
 }
 ```
- 
+
 
 &emsp;&emsp;@Target注解的属性value可以为以下值，被@Target注解的注解只能用来注解对应的目标。
 
@@ -491,7 +489,7 @@ public void getObjectInfo(){
 
 &emsp;&emsp;接下来通过一个案例来演示通过反射获取注解，具体代码如下。案例中提供了较为详细的注释，请大家认真阅读。
 
- 
+
 ```
 import java.lang.annotation.*;
 
@@ -565,15 +563,14 @@ System.out.println("非MyAnnotation注解：" + an);
 
 }
 ```
- 
+
 
 &emsp;&emsp;代码中getObjectInfo()方法有两个注解，@MyAnnotation和@Deprecated，其中，自定义注解@MyAnnotation的元注解@Retention的值为RetentionPolicy.RUNTIME，含义为当运行Java程序时，虚拟机保留注解，所以在运行时可以通过反射机制获取该注解。程序运行结果如图8.3所示。@Deprecated为内建注解，通过运行结果可以看出@Deprecated的元注解@Retention的值也是RetentionPolicy.RUNTIME。
 
 
 
-<p align="center"><img src="./img/d8z/tu8.3.png" /></p>  
+<p align="center"><img src="../img/d8z/tu8.3.png" /></p>  
 <p align="center">图8.3  通过反射机制获取注解</p>  
-
 
 
 
@@ -583,7 +580,7 @@ System.out.println("非MyAnnotation注解：" + an);
 
  
 
- 
+
 ```
 //@Documented
 
@@ -601,19 +598,19 @@ public class TestAnnotation{
 
 }
 ```
- 
+
 
 &emsp;&emsp;使用javadoc生成文档，产生的文档对TestAnnotation类的描述如下：
 
- 
+
 ```
 class TestAnnotation extends java.lang.Object
 ```
- 
+
 
 &emsp;&emsp;如果取消对@Documented的注释，使其起作用，将会出现另一个结果：
 
- 
+
 ```
 @MyAnnotation 
 
@@ -662,12 +659,12 @@ public class Truck extends Vehicle
 
 }
 ```
- 
+
 
 &emsp;&emsp;通过以上的代码，Truck类和Vehicle类一样都被@MyAnnotation注解了。
 
 
- 
+
 
 ## 8.5  上机任务
 

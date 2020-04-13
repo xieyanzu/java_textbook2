@@ -38,7 +38,7 @@
 
 
 
-<p align="center"><img src="./img/d3z/tu3.1.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.1.png" /></p>  
 <p align="center">图3.1  Collection接口框架</p>  
 
 
@@ -71,7 +71,7 @@
 
 
 
-<p align="center"><img src="./img/d3z/tu3.2.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.2.png" /></p>  
 <p align="center">图3.2  Map接口框架</p>  
 
 
@@ -184,7 +184,7 @@ public static void main(String[] args)
 
 
 
-<p align="center"><img src="./img/d3z/tu3.3.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.3.png" /></p>  
 <p align="center">图3.3  HashSet的使用</p>  
 
 
@@ -226,7 +226,7 @@ Set ts = new TreeSet();
 ```
 
 
-<p align="center"><img src="./img/d3z/tu3.4.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.4.png" /></p>  
 <p align="center">图3.4  TreeSet的使用</p>  
 
 
@@ -329,7 +329,7 @@ public static void main(String[] args) {
 
 
 
-<p align="center"><img src="./img/d3z/tu3.5.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.5.png" /></p>  
 <p align="center">图3.5  Comparable接口的使用</p>  
 
 
@@ -490,7 +490,7 @@ Car car = (Car)obj;
 
 
 
-<p align="center"><img src="./img/d3z/tu3.6.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.6.png" /></p>  
 <p align="center">图3.6  Iterator迭代器的使用</p>  
 
 
@@ -741,7 +741,7 @@ class TestZuChe2
 &emsp;&emsp;编译、运行程序，运行结果如图3.7所示。通过代码和运行结果可以看出，此例中采用了增强for循环的方式遍历了ArrayList集合中的所有元素，集合中元素的顺序是按照add()方法调用的顺序依次存储的，再通过调用ArrayList接口的get(int index)方法获取指定位置的元素，并输出该对象的信息。
 
 
-<p align="center"><img src="./img/d3z/tu3.7.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.7.png" /></p>  
 <p align="center">图3.7  ArrayList使用</p>  
 
 
@@ -957,7 +957,7 @@ List list = new ArrayList();
 
 
 
-<p align="center"><img src="./img/d3z/tu3.8.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.8.png" /></p>  
 <p align="center">图3.8  Collections工具类使用</p>  
 
 
@@ -1071,7 +1071,7 @@ res = stuName.compareTo(input.stuName);
 
 
 
-<p align="center"><img src="./img/d3z/tu3.9.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.9.png" /></p>  
 <p align="center">图3.9  Comparable比较器的使用</p>  
 
 
@@ -1205,7 +1205,7 @@ class Student{
 
 
 
-<p align="center"><img src="./img/d3z/tu3.10.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.10.png" /></p>  
 <p align="center">图3.10  Comparator比较器的使用</p>  
 
 
@@ -1308,7 +1308,7 @@ public class TestArrays{
 
 
 
-<p align="center"><img src="./img/d3z/tu3.11.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.11.png" /></p>  
 <p align="center">图3.11  Arrays工具类的使用</p>  
 
 
@@ -1410,7 +1410,7 @@ public class TestHashMap
 
 
 
-<p align="center"><img src="./img/d3z/tu3.12.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.12.png" /></p>  
 <p align="center">图3.12  HashMap的使用</p>  
 
 
@@ -1554,7 +1554,7 @@ public class TestBox
 
 
 
-<p align="center"><img src="./img/d3z/tu3.13.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.13.png" /></p>  
 <p align="center">图3.13  自动拆箱和装箱</p>  
 
 
@@ -1632,7 +1632,7 @@ class TestZuChe2
 
 
 
-<p align="center"><img src="./img/d3z/tu3.14.png" /></p>  
+<p align="center"><img src="../img/d3z/tu3.14.png" /></p>  
 <p align="center">图3.14  泛型的使用</p>  
 
 

@@ -77,9 +77,8 @@ public class TestFileSeparator {
 
 
 
-<p align="center"><img src="./img/d4z/tu4.1.png" /></p>  
+<p align="center"><img src="../img/d4z/tu4.1.png" /></p>  
 <p align="center">图4.1  File类分隔符</p>  
-
 
 
 
@@ -165,9 +164,8 @@ public class TestFile{
 
 
 
-<p align="center"><img src="./img/d4z/tu4.2.png" /></p>  
+<p align="center"><img src="../img/d4z/tu4.2.png" /></p>  
 <p align="center">图4.2  File类对象的常用方法</p>  
-
 
 
 &emsp;&emsp;程序中的代码for(File root:File.listRoots()){…}，通过一个增强for循环，遍历File.listRoots()方法获取的根目录集合（File对象集合）。
@@ -178,9 +176,8 @@ public class TestFile{
 
 
 
-<p align="center"><img src="./img/d4z/tu4.3.png" /></p>  
+<p align="center"><img src="../img/d4z/tu4.3.png" /></p>  
 <p align="center">图4.3  转换符说明</p>  
-
 
 
 
@@ -335,9 +332,8 @@ public class TestListFile{
 
 
 
-<p align="center"><img src="./img/d4z/tu4.4.png" /></p>  
+<p align="center"><img src="../img/d4z/tu4.4.png" /></p>  
 <p align="center">图4.4  获取目录和文件</p>  
-
 
 
 
@@ -394,14 +390,12 @@ public class TestListFile{
 
 
 
-<p align="center"><img src="./img/d4z/tu4.5.png" /></p>  
+<p align="center"><img src="../img/d4z/tu4.5.png" /></p>  
 <p align="center">图4.5  输入流示意图   </p>  
 
 
-
-<p align="center"><img src="./img/d4z/tu4.6.png" /></p>  
+<p align="center"><img src="../img/d4z/tu4.6.png" /></p>  
 <p align="center">图4.6  输出流示意图</p>  
-
 
 
 ​                                         
@@ -966,9 +960,8 @@ void close()编译、运行程序，其运行结果如图4.7所示。
 
 
 
-<p align="center"><img src="./img/d4z/tu4.7.png" /></p>  
+<p align="center"><img src="../img/d4z/tu4.7.png" /></p>  
 <p align="center">图4.7  使用数据流存取车辆信息</p>  
-
 
 
 
@@ -1439,15 +1432,14 @@ void close()编译、运行程序，其运行结果如图4.7所示。
 
 
 
-<p align="center"><img src="./img/d4z/tu4.8.png" /></p>  
+<p align="center"><img src="../img/d4z/tu4.8.png" /></p>  
 <p align="center">图4.8  使用DOM解析vehicles.xml</p>  
-
 
 
 
 &emsp;&emsp;具体代码如下（需要大家认真阅读代码中的注释，理解含义）：
 
- 
+
 ```
 import java.io.*;
 
@@ -1551,7 +1543,7 @@ public class TestDOM {
 
 }
 ```
- 
+
 
 &emsp;&emsp;在上面的代码中，用到了根节点、属性节点、元素节点和文本节点，它们的nodeName、nodeValue和attributes 的值含义各不相同，需要注意。
 
