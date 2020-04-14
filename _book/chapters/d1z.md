@@ -1,4 +1,4 @@
-## 本章简介
+﻿## 本章简介
  异常（Exception）处理是程序设计中一个非常重要的方面，也是程序设计的一大难点。也许用现有的知识，可能想到用if（！错误）｛正常代码｝else｛错误代码｝来控制错误，但这样做会非常痛苦。Java语言在设计的时候就考虑到了这个问题，提出了异常处理的机制，即抛出、捕获机制用来解决这样的问题。本章将详细介绍什么是异常以及异常的继承关系，如何使用try…catch…finally语句处理异常，以及自定义异常的使用，最后会列出编程过程中的常见异常让大家有所了解。
 
  
@@ -40,11 +40,15 @@ public class TestEx
 }
 ```
 
-<p align="center"><img src="../img/d1z/tu1.1.png" /></p>  
-<p align="center">图1.1  异常引入</p>  
+<p align="center"><img src="../img/d1z/tu1.1.png" /></p>   
+<p align="center">图1.1  异常引入</p>   
+
+
 &emsp;&emsp;程序出错的原因很简单，程序员定义的数组长度是3，而在使用数组时，却访问了下标为3的第4个数组元素，所以程序出现异常。
 
 &emsp;&emsp;让我们再看一个程序：
+
+1
 
 
 ```
@@ -87,14 +91,14 @@ public class TestEx2
 &emsp;&emsp;运行程序，分两次输入如下数值，程序运行结果如图1.2和图1.3所示。
 
 
-<p align="center"><img src="../img/d1z/tu1.2.png" /></p>  
-<p align="center">图1.2  异常引入</p>  
+<p align="center"><img src="../img/d1z/tu1.2.png" /></p>   
+<p align="center">图1.2  异常引入</p>   
 
 
 
 
-<p align="center"><img src="../img/d1z/tu1.3.png" /></p>  
-<p align="center">图1.3  异常引入</p>  
+<p align="center"><img src="../img/d1z/tu1.3.png" /></p>   
+<p align="center">图1.3  异常引入</p>   
 
 
 
@@ -153,8 +157,8 @@ public class TestEx4
 &emsp;&emsp;在修改后的代码中，采用了while循环的方式进行判断，如果用户输入的孩子数为0，则要求用户继续输入，通过这种方式，解决了除数为0的异常的产生，程序运行结果如图1.4所示。
 
 
-<p align="center"><img src="../img/d1z/tu1.4.png" /></p>  
-<p align="center">图1.4  异常引入</p>  
+<p align="center"><img src="../img/d1z/tu1.4.png" /></p>   
+<p align="center">图1.4  异常引入</p>   
 
 
 &emsp;&emsp;采用判断语句的方式进行异常的处理，首先需要意识到哪些地方可能出现异常，在可能出现异常的地方加入判断语句和处理代码。这种处理方式对程序员的要求高，而且代码量大，程序结构混乱。
@@ -168,8 +172,8 @@ public class TestEx4
 &emsp;&emsp;Error类是Throwable类的子类，是Java应用程序本身无法恢复的严重错误，应用程序不需要捕获、处理这些严重错误。当程序发生这种严重错误时，通常的做法是通知用户并中止程序的执行。
 
 
-<p align="center"><img src="../img/d1z/tu1.5.png" /></p>  
-<p align="center">图1.5  Java异常层次结构图</p>  
+<p align="center"><img src="../img/d1z/tu1.5.png" /></p>   
+<p align="center">图1.5  Java异常层次结构图</p>   
 
 
 &emsp;&emsp;Exception、Error表示Java应用程序本身无法恢复的严重错误，而不是这种Java应用程序无法恢复的严重错误，我们称之为异常。异常可分为运行时异常（RuntimeException）和检查时异常（CheckedException）两种。
@@ -257,8 +261,8 @@ public class TestEx5
 &emsp;&emsp;该程序中，将可能抛出异常的代码放在了try语句块里，使用catch语句对所有异常（因为异常类型是Exception）进行捕获。如发生异常则输出“数组下标越界，请修改程序！”并且不退出程序，继续执行异常后面的代码，程序运行结果如图1.6所示。
 
 
-<p align="center"><img src="../img/d1z/tu1.6.png" /></p>  
-<p align="center">图1.6  try...catch...异常结构</p>  
+<p align="center"><img src="../img/d1z/tu1.6.png" /></p>   
+<p align="center">图1.6  try...catch...异常结构</p>   
 
 
 
@@ -333,8 +337,8 @@ public class TestEx6
 ```
 
 
-<p align="center"><img src="../img/d1z/tu1.7.png" /></p>  
-<p align="center">图1.7  异常处理中的问题</p>  
+<p align="center"><img src="../img/d1z/tu1.7.png" /></p>   
+<p align="center">图1.7  异常处理中的问题</p>   
 
 
 
@@ -390,8 +394,8 @@ public class TestEx7
 &emsp;&emsp;编译、运行程序，依然输入苹果数为8，孩子数为0，显示“算数异常，请检查程序！”，如图1.8所示。
 
 
-<p align="center"><img src="../img/d1z/tu1.8.png" /></p>  
-<p align="center">图1.8  异常处理中多个catch语句一</p>  
+<p align="center"><img src="../img/d1z/tu1.8.png" /></p>   
+<p align="center">图1.8  异常处理中多个catch语句一</p>   
 
 
 
@@ -401,8 +405,8 @@ public class TestEx7
 
 
 
-<p align="center"><img src="../img/d1z/tu1.9.png" /></p>  
-<p align="center">图1.9  异常处理中多个catch语句二</p>  
+<p align="center"><img src="../img/d1z/tu1.9.png" /></p>   
+<p align="center">图1.9  异常处理中多个catch语句二</p>   
 
 
 
@@ -565,8 +569,8 @@ public class TestEx10
 &emsp;&emsp;编译、运行该程序，运行结果如图1.10所示。
 
 
-<p align="center"><img src="../img/d1z/tu1.10.png" /></p>  
-<p align="center">图1.10  finally语句块的使用一</p>  
+<p align="center"><img src="../img/d1z/tu1.10.png" /></p>   
+<p align="center">图1.10  finally语句块的使用一</p>   
 
 
 
@@ -574,8 +578,8 @@ public class TestEx10
 &emsp;&emsp;删除return;语句前的“//”，编译、运行该程序，发现finally语句块中的代码仍然会被执行，显示出“显示完毕！”的内容，运行结果如图1.11所示。
 
 
-<p align="center"><img src="../img/d1z/tu1.11.png" /></p>  
-<p align="center">图1.11  finally语句块的使用二</p>  
+<p align="center"><img src="../img/d1z/tu1.11.png" /></p>   
+<p align="center">图1.11  finally语句块的使用二</p>   
 
 
 
@@ -584,8 +588,8 @@ public class TestEx10
 
 
 
-<p align="center"><img src="../img/d1z/tu1.12.png" /></p>  
-<p align="center">图1.12  finally语句块的使用三</p>  
+<p align="center"><img src="../img/d1z/tu1.12.png" /></p>   
+<p align="center">图1.12  finally语句块的使用三</p>   
 
 
 
@@ -677,14 +681,14 @@ public class TestEx11
 &emsp;&emsp;从继承关系上来说，数组下标越界异常ArrayIndexOutOfBoundsException是运行时异常RuntimeException的子类，而运行时异常RuntimeException又是Exception异常的子类，我们在捕获异常的时候，应该按照“从小到大”的顺序捕获异常，这样才能保证逐层捕获，从而避免父类的大的异常进行了捕获，导致子类的小的异常无法进行捕获的情况。将上面的代码调整为先捕获数组下标越界异常ArrayIndexOutOfBoundsException，再捕获运行时异常RuntimeException，编译运行，程序运行结果如图1.14所示。
 
 
-<p align="center"><img src="../img/d1z/tu1.13.png" /></p>  
-<p align="center">图1.13  异常捕获顺序一</p>  
+<p align="center"><img src="../img/d1z/tu1.13.png" /></p>   
+<p align="center">图1.13  异常捕获顺序一</p>   
 
 
 
 
-<p align="center"><img src="../img/d1z/tu1.14.png" /></p>  
-<p align="center">图1.14  异常捕获顺序二</p>  
+<p align="center"><img src="../img/d1z/tu1.14.png" /></p>   
+<p align="center">图1.14  异常捕获顺序二</p>   
 
 
 
@@ -757,8 +761,8 @@ public class TestEx13
 &emsp;&emsp;编译、运行程序，程序捕获数组下标越界异常之后，先输出异常对象的getMessage()方法的结果，之后再调用异常对象的printStackTrace()方法输出堆栈信息。程序运行结果如图1.15所示。
 
 
-<p align="center"><img src="../img/d1z/tu1.15.png" /></p>  
-<p align="center">图1.15  异常对象的使用</p>  
+<p align="center"><img src="../img/d1z/tu1.15.png" /></p>   
+<p align="center">图1.15  异常对象的使用</p>   
 
 
 
@@ -815,8 +819,8 @@ public class TestEx13
 &emsp;&emsp;（1）运行下面的程序代码，输入苹果数为10，孩子数为a，程序运行结果如图1.16所示，程序抛出异常并退出。
 
 
-<p align="center"><img src="../img/d1z/tu1.16.png" /></p>  
-<p align="center">图1.16  获取输入与期望类型不匹配</p>  
+<p align="center"><img src="../img/d1z/tu1.16.png" /></p>   
+<p align="center">图1.16  获取输入与期望类型不匹配</p>   
 
 
 
@@ -958,8 +962,8 @@ public class TestEx15
 
 ```
 
-<p align="center"><img src="../img/d1z/tu1.17.png" /></p>  
-<p align="center">图1.17  手工抛出异常</p>  
+<p align="center"><img src="../img/d1z/tu1.17.png" /></p>   
+<p align="center">图1.17  手工抛出异常</p>   
 
 
 
@@ -1027,8 +1031,8 @@ public class TestEx16{
 
 
 
-<p align="center"><img src="../img/d1z/tu1.18.png" /></p>  
-<p align="center">图1.18  再次抛出异常</p>  
+<p align="center"><img src="../img/d1z/tu1.18.png" /></p>   
+<p align="center">图1.18  再次抛出异常</p>   
 
 
 
@@ -1036,8 +1040,8 @@ public class TestEx16{
 
 
 
-<p align="center"><img src="../img/d1z/tu1.19.png" /></p>  
-<p align="center">图1.19  运行时异常抛出不捕获处理</p>  
+<p align="center"><img src="../img/d1z/tu1.19.png" /></p>   
+<p align="center">图1.19  运行时异常抛出不捕获处理</p>   
 
 
 
@@ -1104,8 +1108,8 @@ public class TestEx17{
 &emsp;&emsp;编译程序，编译器报错，如图1.20所示。
 
 
-<p align="center"><img src="../img/d1z/tu1.20.png" /></p>  
-<p align="center">图1.20  检查时异常抛出不捕获</p>  
+<p align="center"><img src="../img/d1z/tu1.20.png" /></p>   
+<p align="center">图1.20  检查时异常抛出不捕获</p>   
 
 
 
@@ -1173,8 +1177,8 @@ public class TestEx18{
 
 
 
-<p align="center"><img src="../img/d1z/tu1.21.png" /></p>  
-<p align="center">图1.21  声明方法抛出异常</p>  
+<p align="center"><img src="../img/d1z/tu1.21.png" /></p>   
+<p align="center">图1.21  声明方法抛出异常</p>   
 
 
 
@@ -1319,8 +1323,8 @@ public class TestEx19{
 程序运行结果如图1.22所示。
 
 
-<p align="center"><img src="../img/d1z/tu1.22.png" /></p>  
-<p align="center">图1.22  自定义异常类使用</p>  
+<p align="center"><img src="../img/d1z/tu1.22.png" /></p>   
+<p align="center">图1.22  自定义异常类使用</p>   
 
 
 
