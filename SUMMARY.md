@@ -1,6 +1,6 @@
 # Summary
 
-* [前言](README.md)
+* [目录](README.md)
 * [第一章    异常处理](chapters/d1z.md)
 * [第二章    数据结构](chapters/d2z.md)
 * [第三章    集合和泛型](chapters/d3z.md)
